@@ -5,6 +5,7 @@ import {
   extractParagraph,
   extractSection,
   extractTopHeading,
+  stripLeadSections,
   stripSeriesPrefix,
 } from './parseMarkdown';
 import {
@@ -43,6 +44,7 @@ function buildCharacters(): Record<string, CharacterEntry> {
           summary: extractParagraph(extractSection(markdown, 'Кто она')),
           signatureItem: selectSignatureItem(appearanceBullets),
           markdown,
+          bodyMarkdown: stripLeadSections(markdown),
         },
       ];
     }),
@@ -70,6 +72,7 @@ function buildEpisodes(): EpisodeEntry[] {
           alt: extractMetadataValue(markdown, 'Заголовок'),
         },
         markdown,
+        bodyMarkdown: stripLeadSections(markdown),
       };
     })
     .sort((left, right) => left.number - right.number);
@@ -83,6 +86,7 @@ function buildWorld(): WorldEntry[] {
         slug: pathSlug(path),
         title: stripSeriesPrefix(extractTopHeading(markdown)),
         markdown,
+        bodyMarkdown: stripLeadSections(markdown),
       };
     })
     .sort((left, right) => left.title.localeCompare(right.title, 'ru'));

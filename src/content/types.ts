@@ -9,6 +9,7 @@ export interface CharacterEntry {
   summary: string;
   signatureItem: string;
   markdown: string;
+  bodyMarkdown: string;
 }
 
 export interface EpisodeEntry {
@@ -20,12 +21,14 @@ export interface EpisodeEntry {
   keyScene: string;
   illustration: IllustrationEntry;
   markdown: string;
+  bodyMarkdown: string;
 }
 
 export interface WorldEntry {
   slug: string;
   title: string;
   markdown: string;
+  bodyMarkdown: string;
 }
 
 export interface ContentStore {

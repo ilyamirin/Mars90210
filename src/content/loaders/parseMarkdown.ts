@@ -53,3 +53,32 @@ export function extractParagraph(section: string) {
     .filter(Boolean)
     .find((line) => !line.startsWith('- ') && !line.startsWith('Фраза-ключ:')) ?? '';
 }
+
+export function stripLeadSections(markdown: string) {
+  const lines = markdown.split('\n');
+  const output: string[] = [];
+  let skipMetadata = false;
+  let skippedHeading = false;
+
+  for (const line of lines) {
+    if (!skippedHeading && line.startsWith('# ')) {
+      skippedHeading = true;
+      continue;
+    }
+
+    if (line.startsWith('## Метаданные')) {
+      skipMetadata = true;
+      continue;
+    }
+
+    if (skipMetadata && line.startsWith('## ')) {
+      skipMetadata = false;
+    }
+
+    if (!skipMetadata) {
+      output.push(line);
+    }
+  }
+
+  return output.join('\n').trim();
+}

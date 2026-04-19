@@ -1,5 +1,10 @@
 import { RouteObject } from 'react-router-dom';
+import { CharacterPage } from '../features/characters/CharacterPage';
+import { CharactersPage } from '../features/characters/CharactersPage';
+import { EpisodePage } from '../features/episodes/EpisodePage';
+import { EpisodesPage } from '../features/episodes/EpisodesPage';
 import { HomePage } from '../features/home/HomePage';
+import { WorldPage } from '../features/world/WorldPage';
 
 export const routes: RouteObject[] = [
   {
@@ -8,15 +13,23 @@ export const routes: RouteObject[] = [
   },
   {
     path: '/characters',
-    element: <div>Героини</div>,
+    element: <CharactersPage />,
+  },
+  {
+    path: '/characters/:slug',
+    element: <CharacterPage />,
   },
   {
     path: '/episodes',
-    element: <div>Эпизоды</div>,
+    element: <EpisodesPage />,
+  },
+  {
+    path: '/episodes/:slug',
+    element: <EpisodePage />,
   },
   {
     path: '/world',
-    element: <div>Мир</div>,
+    element: <WorldPage />,
   },
   {
     path: '/about',
