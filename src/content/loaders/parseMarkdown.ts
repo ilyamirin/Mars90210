@@ -71,8 +71,16 @@ export function stripLeadSections(markdown: string) {
       continue;
     }
 
-    if (skipMetadata && line.startsWith('## ')) {
-      skipMetadata = false;
+    if (skipMetadata) {
+      const trimmed = line.trim();
+
+      if (line.startsWith('## ')) {
+        skipMetadata = false;
+      } else if (trimmed === '' || trimmed.startsWith('- ')) {
+        continue;
+      } else {
+        skipMetadata = false;
+      }
     }
 
     if (!skipMetadata) {
@@ -80,5 +88,53 @@ export function stripLeadSections(markdown: string) {
     }
   }
 
-  return output.join('\n').trim();
+  return stripTechnicalText(output.join('\n').trim());
+}
+
+export function stripTechnicalText(markdown: string) {
+  const blockedPhrases = [
+    'Prediction ID',
+    'Prompt',
+    'Файл вывода',
+    'Папка:',
+    'output_file=',
+    'prediction_id=',
+    'google/nano-banana',
+    'api.replicate',
+    '## Prompt',
+    '## Изображаемый момент',
+    '## Стиль',
+    '## Предметы и continuity',
+  ];
+
+  const cleanedLines = markdown
+    .split('\n')
+    .filter((line) => !blockedPhrases.some((phrase) => line.includes(phrase)));
+
+  return cleanedLines.join('\n').replace(/\n{3,}/g, '\n\n').trim();
+}
+
+export function firstParagraph(markdown: string) {
+  return markdown
+    .split('\n\n')
+    .map((chunk) => chunk.trim())
+    .find((chunk) => chunk.length > 0 && !chunk.startsWith('## ')) ?? '';
+}
+
+export function shortenMarkdown(markdown: string, paragraphs = 2) {
+  return markdown
+    .split('\n\n')
+    .map((chunk) => chunk.trim())
+    .filter(Boolean)
+    .slice(0, paragraphs)
+    .join('\n\n');
+}
+
+export function excerptParagraphs(markdown: string, paragraphs = 2) {
+  return markdown
+    .split('\n\n')
+    .map((chunk) => chunk.trim())
+    .filter((chunk) => chunk.length > 0 && !chunk.startsWith('## '))
+    .slice(0, paragraphs)
+    .join('\n\n');
 }

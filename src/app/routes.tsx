@@ -1,6 +1,7 @@
 import { RouteObject } from 'react-router-dom';
 import { CharacterPage } from '../features/characters/CharacterPage';
 import { CharactersPage } from '../features/characters/CharactersPage';
+import { AboutPage } from '../features/about/AboutPage';
 import { EpisodePage } from '../features/episodes/EpisodePage';
 import { EpisodesPage } from '../features/episodes/EpisodesPage';
 import { HomePage } from '../features/home/HomePage';
@@ -33,6 +34,6 @@ export const routes: RouteObject[] = [
   },
   {
     path: '/about',
-    element: <div>О проекте</div>,
+    element: <AboutPage />,
   },
 ];

@@ -3,14 +3,18 @@ import type { EpisodeEntry } from '../content/types';
 
 export function EpisodeCard({ episode }: { episode: EpisodeEntry }) {
   return (
-    <article className="episode-card">
+    <Link
+      to={`/episodes/${episode.slug}`}
+      className="episode-card"
+      aria-label={`Читать ${episode.title}`}
+    >
+      <img src={episode.illustration.src} alt={episode.illustration.alt} />
       <div className="episode-card-copy">
         <p className="section-eyebrow">Эпизод {String(episode.number).padStart(3, '0')}</p>
         <h3>{episode.title}</h3>
-        <p>{episode.keyScene}</p>
-        <Link to={`/episodes/${episode.slug}`}>Открыть эпизод</Link>
+        <p>{episode.excerpt}</p>
+        <span className="micro-link">Читать далее...</span>
       </div>
-      <img src={episode.illustration.src} alt={episode.illustration.alt} />
-    </article>
+    </Link>
   );
 }

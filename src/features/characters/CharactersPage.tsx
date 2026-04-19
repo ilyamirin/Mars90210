@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
 import { buildContentStore } from '../../content/loaders/contentStore';
+import { HeroineBand } from '../../components/HeroineBand';
 import { SectionHeading } from '../../components/SectionHeading';
 
 export function CharactersPage() {
@@ -10,17 +10,9 @@ export function CharactersPage() {
       <SectionHeading
         eyebrow="Героини"
         title="Четыре героини"
-        description="Четыре разных способа выдерживать давление системы и не растворяться в полезности."
+        description="Тап по портрету открывает личную страницу без лишнего служебного шума."
       />
-      <div className="heroine-list">
-        {characters.map((character) => (
-          <article key={character.slug} className="heroine-summary">
-            <h3>{character.name}</h3>
-            <p>{character.summary}</p>
-            <Link to={`/characters/${character.slug}`}>Открыть профиль</Link>
-          </article>
-        ))}
-      </div>
+      <HeroineBand characters={characters} />
     </div>
   );
 }
