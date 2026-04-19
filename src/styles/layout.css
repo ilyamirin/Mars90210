@@ -1,0 +1,422 @@
+.site-shell {
+  min-height: 100vh;
+  position: relative;
+}
+
+.site-shell::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(145deg, rgba(139, 59, 49, 0.16) 0 16%, transparent 16%),
+    radial-gradient(circle at 82% 18%, rgba(184, 92, 69, 0.16), transparent 30%),
+    radial-gradient(circle at 24% 78%, rgba(87, 47, 39, 0.08), transparent 32%);
+  pointer-events: none;
+}
+
+.site-header,
+.site-footer,
+.site-main {
+  width: min(calc(100% - 1.5rem), var(--page-max));
+  margin: 0 auto;
+}
+
+.site-header {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-4) 0 var(--space-5);
+}
+
+.site-brand {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  letter-spacing: -0.04em;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+}
+
+.site-nav a {
+  padding: 0.58rem 0.9rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 999px;
+  background: rgba(255, 248, 242, 0.66);
+}
+
+.site-nav a.active {
+  background: rgba(184, 92, 69, 0.12);
+  border-color: var(--line-strong);
+}
+
+.site-main {
+  padding-bottom: 5rem;
+}
+
+.site-footer {
+  padding: var(--space-6) 0 var(--space-8);
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.home-page,
+.content-page,
+.episode-reader,
+.about-page {
+  display: grid;
+  gap: var(--space-8);
+}
+
+.hero,
+.about-hero {
+  position: relative;
+  display: grid;
+  align-content: end;
+  gap: var(--space-5);
+  padding: var(--space-10) 0 var(--space-6);
+}
+
+.hero::after,
+.about-hero::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 auto;
+  width: min(56vw, 18rem);
+  height: min(56vw, 18rem);
+  border-top: 1px solid rgba(139, 59, 49, 0.24);
+  border-right: 1px solid rgba(139, 59, 49, 0.24);
+  border-radius: 50%;
+  transform: translate(14%, 6%);
+  pointer-events: none;
+}
+
+.hero h1,
+.about-hero h1 {
+  max-width: 11ch;
+  font-size: clamp(3.1rem, 15vw, 5.8rem);
+  letter-spacing: -0.06em;
+}
+
+.hero-copy,
+.section-description,
+.markdown-prose,
+.episode-header p,
+.world-glimpse p,
+.heroine-summary p,
+.episode-card p,
+.world-preview-card p,
+.about-teaser-copy p {
+  max-width: 62ch;
+  color: var(--text-secondary);
+}
+
+.secondary-link,
+.episode-nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  min-height: 2.9rem;
+  padding: 0.8rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(255, 246, 240, 0.82);
+  font-family: var(--font-ui);
+  font-size: 0.94rem;
+  transition: transform 160ms ease, background-color 160ms ease;
+}
+
+.secondary-link:hover,
+.episode-nav a:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 246, 240, 0.96);
+}
+
+.content-section,
+.content-page,
+.episode-reader {
+  padding-bottom: var(--space-2);
+}
+
+.section-heading {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.section-heading h2,
+.content-page h1,
+.episode-header h1,
+.about-copy h2 {
+  font-size: clamp(2rem, 8vw, 3.3rem);
+  letter-spacing: -0.05em;
+}
+
+.section-eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  color: var(--brick);
+}
+
+.heroine-band {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.heroine-panel {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  background: linear-gradient(180deg, rgba(255, 247, 242, 0.9), rgba(246, 233, 225, 0.82));
+  overflow: hidden;
+}
+
+.heroine-panel:hover {
+  transform: translateY(-1px);
+}
+
+.tone-denim .heroine-portrait-frame {
+  background: linear-gradient(180deg, rgba(90, 107, 128, 0.42), rgba(90, 107, 128, 0.12));
+}
+
+.tone-brick .heroine-portrait-frame {
+  background: linear-gradient(180deg, rgba(184, 92, 69, 0.34), rgba(184, 92, 69, 0.12));
+}
+
+.tone-sand .heroine-portrait-frame {
+  background: linear-gradient(180deg, rgba(214, 184, 156, 0.48), rgba(214, 184, 156, 0.16));
+}
+
+.tone-ink .heroine-portrait-frame {
+  background: linear-gradient(180deg, rgba(87, 47, 39, 0.34), rgba(87, 47, 39, 0.12));
+}
+
+.heroine-portrait-frame {
+  border-radius: calc(var(--radius-lg) - 10px);
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+}
+
+.heroine-portrait {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroine-copy,
+.episode-card-copy,
+.world-preview-copy,
+.world-entry-copy,
+.character-copy,
+.about-teaser-copy,
+.about-copy {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.heroine-name {
+  font-size: 1.15rem;
+  font-family: var(--font-display);
+}
+
+.heroine-item {
+  font-size: 0.94rem;
+  color: var(--text-secondary);
+}
+
+.micro-link {
+  font-family: var(--font-ui);
+  font-size: 0.84rem;
+  color: var(--brick);
+}
+
+.heroine-list,
+.episodes-stack,
+.world-stack,
+.about-stack {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.heroine-summary,
+.world-entry,
+.episode-card,
+.world-glimpse,
+.episode-header,
+.world-preview-card,
+.world-entry-visual,
+.about-section,
+.about-teaser,
+.character-hero {
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+  backdrop-filter: blur(10px);
+}
+
+.episode-card,
+.world-preview-card,
+.world-entry-visual {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-4);
+  color: inherit;
+}
+
+.episode-card img,
+.illustration-figure img,
+.world-preview-card img,
+.world-entry-gallery img,
+.character-portrait {
+  width: 100%;
+  border-radius: calc(var(--radius-lg) - 10px);
+  object-fit: cover;
+}
+
+.episode-card .micro-link {
+  color: var(--brick);
+}
+
+.illustration-figure {
+  margin: 0;
+}
+
+.markdown-prose {
+  display: grid;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+.markdown-prose h2 {
+  margin-top: var(--space-5);
+  font-size: 1.5rem;
+}
+
+.markdown-prose p {
+  max-width: 65ch;
+}
+
+.markdown-prose ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.markdown-prose li {
+  margin-bottom: 0.45rem;
+}
+
+.episode-mosaic,
+.world-preview-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.world-preview-card h3,
+.episode-card h3 {
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+.about-teaser,
+.about-section,
+.character-hero {
+  display: grid;
+  gap: var(--space-4);
+  padding: var(--space-5);
+}
+
+.about-teaser-visual,
+.about-visual {
+  display: grid;
+  gap: var(--space-3);
+  align-content: start;
+}
+
+.section-glyph {
+  min-height: 10rem;
+  border-radius: calc(var(--radius-lg) - 10px);
+  border: 1px solid rgba(139, 59, 49, 0.18);
+  background:
+    radial-gradient(circle at 80% 18%, rgba(201, 112, 89, 0.18), transparent 22%),
+    linear-gradient(180deg, rgba(255, 248, 242, 0.9), rgba(235, 214, 204, 0.85));
+  overflow: hidden;
+}
+
+.section-glyph-svg {
+  width: 100%;
+  height: 100%;
+  stroke: rgba(139, 59, 49, 0.78);
+  stroke-width: 2;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.world-entry-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-2);
+}
+
+.character-portrait-block {
+  display: grid;
+}
+
+.character-signature {
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+  color: var(--brick);
+}
+
+.episode-header {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+}
+
+.episode-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+@media (min-width: 720px) {
+  .site-header {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+  }
+
+  .hero,
+  .about-hero {
+    min-height: auto;
+    padding-top: 3rem;
+  }
+
+  .heroine-band,
+  .episode-mosaic,
+  .world-preview-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .episode-card,
+  .about-teaser,
+  .about-section {
+    grid-template-columns: 1.02fr 0.98fr;
+    align-items: center;
+  }
+
+  .character-hero {
+    grid-template-columns: 0.88fr 1.12fr;
+    align-items: start;
+  }
+}
