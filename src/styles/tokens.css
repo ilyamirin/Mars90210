@@ -1,0 +1,25 @@
+:root {
+  --bg-page: #f4ece2;
+  --bg-panel: #eadbc8;
+  --bg-panel-strong: #3b201a;
+  --text-primary: #241814;
+  --text-secondary: #68574f;
+  --text-on-dark: #f9eedf;
+  --line-soft: rgba(36, 24, 20, 0.14);
+  --rust: #bd6840;
+  --brick: #7e3727;
+  --denim: #4a6278;
+  --sand: #ccb193;
+  --radius-sm: 14px;
+  --radius-md: 24px;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --page-max: 78rem;
+  --font-display: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", serif;
+  --font-body: "Georgia", "Times New Roman", serif;
+  --font-ui: "Avenir Next", "Helvetica Neue", sans-serif;
+}
