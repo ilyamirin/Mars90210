@@ -24,3 +24,13 @@ test('renders the approved homepage sections', () => {
   expect(screen.getByRole('heading', { name: 'Сейчас читать' })).toBeInTheDocument();
   expect(screen.getByRole('heading', { name: 'Мир под куполом' })).toBeInTheDocument();
 });
+
+test('keeps a single primary call to action on the homepage', () => {
+  render(
+    <MemoryRouter>
+      <HomePage />
+    </MemoryRouter>,
+  );
+
+  expect(screen.getAllByRole('link', { name: 'Читать эпизоды' })).toHaveLength(1);
+});
