@@ -1,0 +1,15 @@
+import { render, screen } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
+import App from './App';
+
+test('renders primary site navigation', () => {
+  render(
+    <MemoryRouter initialEntries={['/']}>
+      <App />
+    </MemoryRouter>,
+  );
+
+  expect(screen.getByRole('link', { name: 'Героини' })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: 'Эпизоды' })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: 'Мир' })).toBeInTheDocument();
+});
