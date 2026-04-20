@@ -1,0 +1,526 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Mars90210" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Основная" [ref=e6]:
+      - link "Героини" [ref=e7] [cursor=pointer]:
+        - /url: /characters
+      - link "Эпизоды" [active] [ref=e8] [cursor=pointer]:
+        - /url: /episodes
+      - link "Мир" [ref=e9] [cursor=pointer]:
+        - /url: /world
+      - link "О проекте" [ref=e10] [cursor=pointer]:
+        - /url: /about
+  - main [ref=e11]:
+    - generic [ref=e128]:
+      - generic [ref=e129]:
+        - paragraph [ref=e130]: Сезон 1
+        - heading "Эпизоды" [level=2] [ref=e131]
+        - paragraph [ref=e132]: Читать сезон как последовательность маленьких сдвигов, а не как архив синопсисов.
+      - generic [ref=e133]:
+        - link "Читать Синий рукав, красный сигнал" [ref=e134] [cursor=pointer]:
+          - /url: /episodes/episode-001
+          - img "Синий рукав, красный сигнал" [ref=e135]
+          - generic [ref=e136]:
+            - paragraph [ref=e137]: Эпизод 001
+            - heading "Синий рукав, красный сигнал" [level=3] [ref=e138]
+            - paragraph [ref=e139]: "Лира проснулась раньше будильника — от той особенной тишины, которая бывает только под куполом перед началом рабочего дня, когда город ещё не заговорил, но уже дышит. На кухонной панели медленно проступали цифры времени. Вода в чайнике едва слышно шуршала. Снаружи, за светлым стеклом, лежал привычный марсианский рассвет: не розовый, не земной, а ржаво-золотой, как будто кто-то осторожно тёр о небо старую медь."
+            - generic [ref=e140]: Читать далее...
+        - link "Читать То, что остаётся в логах" [ref=e141] [cursor=pointer]:
+          - /url: /episodes/episode-002
+          - img "То, что остаётся в логах" [ref=e142]
+          - generic [ref=e143]:
+            - paragraph [ref=e144]: Эпизод 002
+            - heading "То, что остаётся в логах" [level=3] [ref=e145]
+            - paragraph [ref=e146]: Айгуль пришла в ПВЗ раньше всех, кроме машин.
+            - generic [ref=e147]: Читать далее...
+        - link "Читать Улыбка по регламенту" [ref=e148] [cursor=pointer]:
+          - /url: /episodes/episode-003
+          - img "Улыбка по регламенту" [ref=e149]
+          - generic [ref=e150]:
+            - paragraph [ref=e151]: Эпизод 003
+            - heading "Улыбка по регламенту" [level=3] [ref=e152]
+            - paragraph [ref=e153]: К полудню Марта уже чувствовала, как день оседает на ней мелкой усталой пылью.
+            - generic [ref=e154]: Читать далее...
+        - link "Читать Письмо с Земли" [ref=e155] [cursor=pointer]:
+          - /url: /episodes/episode-004
+          - img "Письмо с Земли" [ref=e156]
+          - generic [ref=e157]:
+            - paragraph [ref=e158]: Эпизод 004
+            - heading "Письмо с Земли" [level=3] [ref=e159]
+            - paragraph [ref=e160]: Письмо лежало на стойке, плоское, официальное, с земной маркировкой и сухой синей полосой безопасности по краю.
+            - generic [ref=e161]: Читать далее...
+        - link "Читать После закрытия" [ref=e162] [cursor=pointer]:
+          - /url: /episodes/episode-005
+          - img "После закрытия" [ref=e163]
+          - generic [ref=e164]:
+            - paragraph [ref=e165]: Эпизод 005
+            - heading "После закрытия" [level=3] [ref=e166]
+            - paragraph [ref=e167]: В субботу ПВЗ закрывался не позже обычного, но тишина после закрытия всегда была другой.
+            - generic [ref=e168]: Читать далее...
+        - link "Читать Человек из банка" [ref=e169] [cursor=pointer]:
+          - /url: /episodes/episode-006
+          - img "Человек из банка" [ref=e170]
+          - generic [ref=e171]:
+            - paragraph [ref=e172]: Эпизод 006
+            - heading "Человек из банка" [level=3] [ref=e173]
+            - paragraph [ref=e174]: Силан пришёл в ПВЗ в десять минут одиннадцатого — не рано и не поздно, а ровно в то время, которое человек с хорошим воспитанием выбирает, если не хочет казаться ни виноватым, ни слишком уверенным.
+            - generic [ref=e175]: Читать далее...
+        - link "Читать Чужое прошлое на грузовом терминале" [ref=e176] [cursor=pointer]:
+          - /url: /episodes/episode-007
+          - img "Чужое прошлое на грузовом терминале" [ref=e177]
+          - generic [ref=e178]:
+            - paragraph [ref=e179]: Эпизод 007
+            - heading "Чужое прошлое на грузовом терминале" [level=3] [ref=e180]
+            - paragraph [ref=e181]: Вечером логистика всегда звучала иначе.
+            - generic [ref=e182]: Читать далее...
+        - link "Читать Плохое стихотворение" [ref=e183] [cursor=pointer]:
+          - /url: /episodes/episode-008
+          - img "Плохое стихотворение" [ref=e184]
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: Эпизод 008
+            - heading "Плохое стихотворение" [level=3] [ref=e187]
+            - paragraph [ref=e188]: Ночью квартира Марты становилась меньше.
+            - generic [ref=e189]: Читать далее...
+        - link "Читать Всё отлично" [ref=e190] [cursor=pointer]:
+          - /url: /episodes/episode-009
+          - img "Всё отлично" [ref=e191]
+          - generic [ref=e192]:
+            - paragraph [ref=e193]: Эпизод 009
+            - heading "Всё отлично" [level=3] [ref=e194]
+            - paragraph [ref=e195]: Руслана ненавидела пятничные звонки домой.
+            - generic [ref=e196]: Читать далее...
+        - link "Читать Слова, сказанные как будто между прочим" [ref=e197] [cursor=pointer]:
+          - /url: /episodes/episode-010
+          - img "Слова, сказанные как будто между прочим" [ref=e198]
+          - generic [ref=e199]:
+            - paragraph [ref=e200]: Эпизод 010
+            - heading "Слова, сказанные как будто между прочим" [level=3] [ref=e201]
+            - paragraph [ref=e202]: Владимир умел заходить в пространство так, будто уже давно в нём хозяин.
+            - generic [ref=e203]: Читать далее...
+        - link "Читать Чай, который нельзя назвать свиданием" [ref=e204] [cursor=pointer]:
+          - /url: /episodes/episode-011
+          - img "Чай, который нельзя назвать свиданием" [ref=e205]
+          - generic [ref=e206]:
+            - paragraph [ref=e207]: Эпизод 011
+            - heading "Чай, который нельзя назвать свиданием" [level=3] [ref=e208]
+            - paragraph [ref=e209]: Лира весь день собирала себя по частям.
+            - generic [ref=e210]: Читать далее...
+        - link "Читать Дневник на дне ящика" [ref=e211] [cursor=pointer]:
+          - /url: /episodes/episode-012
+          - img "Дневник на дне ящика" [ref=e212]
+          - generic [ref=e213]:
+            - paragraph [ref=e214]: Эпизод 012
+            - heading "Дневник на дне ящика" [level=3] [ref=e215]
+            - paragraph [ref=e216]: Айгуль редко открывала нижний ящик.
+            - generic [ref=e217]: Читать далее...
+        - link "Читать Маленькая ошибка" [ref=e218] [cursor=pointer]:
+          - /url: /episodes/episode-013
+          - img "Маленькая ошибка" [ref=e219]
+          - generic [ref=e220]:
+            - paragraph [ref=e221]: Эпизод 013
+            - heading "Маленькая ошибка" [level=3] [ref=e222]
+            - paragraph [ref=e223]: Ошибка была крошечной.
+            - generic [ref=e224]: Читать далее...
+        - link "Читать Почти «да»" [ref=e225] [cursor=pointer]:
+          - /url: /episodes/episode-014
+          - img "Почти «да»" [ref=e226]
+          - generic [ref=e227]:
+            - paragraph [ref=e228]: Эпизод 014
+            - heading "Почти «да»" [level=3] [ref=e229]
+            - paragraph [ref=e230]: Вечером пятницы Земля позвонила сама.
+            - generic [ref=e231]: Читать далее...
+        - link "Читать Файл без подписи" [ref=e232] [cursor=pointer]:
+          - /url: /episodes/episode-015
+          - img "Файл без подписи" [ref=e233]
+          - generic [ref=e234]:
+            - paragraph [ref=e235]: Эпизод 015
+            - heading "Файл без подписи" [level=3] [ref=e236]
+            - paragraph [ref=e237]: К вечеру субботы ПВЗ выдыхался так же, как люди.
+            - generic [ref=e238]: Читать далее...
+        - link "Читать Ночная сверка" [ref=e239] [cursor=pointer]:
+          - /url: /episodes/episode-016
+          - img "Ночная сверка" [ref=e240]
+          - generic [ref=e241]:
+            - paragraph [ref=e242]: Эпизод 016
+            - heading "Ночная сверка" [level=3] [ref=e243]
+            - paragraph [ref=e244]: Ночью ПВЗ становился честнее.
+            - generic [ref=e245]: Читать далее...
+        - link "Читать Короткое письмо" [ref=e246] [cursor=pointer]:
+          - /url: /episodes/episode-017
+          - img "Короткое письмо" [ref=e247]
+          - generic [ref=e248]:
+            - paragraph [ref=e249]: Эпизод 017
+            - heading "Короткое письмо" [level=3] [ref=e250]
+            - paragraph [ref=e251]: Письмо пришло не тогда, когда его ждали.
+            - generic [ref=e252]: Читать далее...
+        - link "Читать Красивый ключик" [ref=e253] [cursor=pointer]:
+          - /url: /episodes/episode-018
+          - img "Красивый ключик" [ref=e254]
+          - generic [ref=e255]:
+            - paragraph [ref=e256]: Эпизод 018
+            - heading "Красивый ключик" [level=3] [ref=e257]
+            - paragraph [ref=e258]: Иногда человеку достаточно одного невинного вопроса, чтобы внутренне почувствовать себя пойманным на месте преступления.
+            - generic [ref=e259]: Читать далее...
+        - link "Читать Тихая мечта у воды" [ref=e260] [cursor=pointer]:
+          - /url: /episodes/episode-019
+          - img "Тихая мечта у воды" [ref=e261]
+          - generic [ref=e262]:
+            - paragraph [ref=e263]: Эпизод 019
+            - heading "Тихая мечта у воды" [level=3] [ref=e264]
+            - paragraph [ref=e265]: У искусственного моря всегда пахло обещанием, а не водой.
+            - generic [ref=e266]: Читать далее...
+        - link "Читать Наконец вслух" [ref=e267] [cursor=pointer]:
+          - /url: /episodes/episode-020
+          - img "Наконец вслух" [ref=e268]
+          - generic [ref=e269]:
+            - paragraph [ref=e270]: Эпизод 020
+            - heading "Наконец вслух" [level=3] [ref=e271]
+            - paragraph [ref=e272]: Ссора началась с коробки.
+            - generic [ref=e273]: Читать далее...
+        - link "Читать Не на них" [ref=e274] [cursor=pointer]:
+          - /url: /episodes/episode-021
+          - img "Не на них" [ref=e275]
+          - generic [ref=e276]:
+            - paragraph [ref=e277]: Эпизод 021
+            - heading "Не на них" [level=3] [ref=e278]
+            - paragraph [ref=e279]: Владимир любил утренние вызовы.
+            - generic [ref=e280]: Читать далее...
+        - link "Читать Северная сторона" [ref=e281] [cursor=pointer]:
+          - /url: /episodes/episode-022
+          - img "Северная сторона" [ref=e282]
+          - generic [ref=e283]:
+            - paragraph [ref=e284]: Эпизод 022
+            - heading "Северная сторона" [level=3] [ref=e285]
+            - paragraph [ref=e286]: Решение иногда приходит не как слово, а как одевание.
+            - generic [ref=e287]: Читать далее...
+        - link "Читать Пропуск без объяснений" [ref=e288] [cursor=pointer]:
+          - /url: /episodes/episode-023
+          - img "Пропуск без объяснений" [ref=e289]
+          - generic [ref=e290]:
+            - paragraph [ref=e291]: Эпизод 023
+            - heading "Пропуск без объяснений" [level=3] [ref=e292]
+            - paragraph [ref=e293]: Утром Марта не встала не потому, что проспала.
+            - generic [ref=e294]: Читать далее...
+        - link "Читать До понедельника" [ref=e295] [cursor=pointer]:
+          - /url: /episodes/episode-024
+          - img "До понедельника" [ref=e296]
+          - generic [ref=e297]:
+            - paragraph [ref=e298]: Эпизод 024
+            - heading "До понедельника" [level=3] [ref=e299]
+            - paragraph [ref=e300]: "Слово `дедлайн` обычно действовало на Руслану как анестезия."
+            - generic [ref=e301]: Читать далее...
+        - link "Читать Презентация будущего" [ref=e302] [cursor=pointer]:
+          - /url: /episodes/episode-025
+          - img "Презентация будущего" [ref=e303]
+          - generic [ref=e304]:
+            - paragraph [ref=e305]: Эпизод 025
+            - heading "Презентация будущего" [level=3] [ref=e306]
+            - paragraph [ref=e307]: Официальное объявление всегда выглядит чище правды.
+            - generic [ref=e308]: Читать далее...
+        - link "Читать Глубже, чем хотелось" [ref=e309] [cursor=pointer]:
+          - /url: /episodes/episode-026
+          - img "Глубже, чем хотелось" [ref=e310]
+          - generic [ref=e311]:
+            - paragraph [ref=e312]: Эпизод 026
+            - heading "Глубже, чем хотелось" [level=3] [ref=e313]
+            - paragraph [ref=e314]: "После официального объявления Лира надеялась хотя бы на одну вещь: что Силан окажется одним из тех приличных людей внутри плохой системы, которые знают не всё."
+            - generic [ref=e315]: Читать далее...
+        - link "Читать Человек, который не упрощает" [ref=e316] [cursor=pointer]:
+          - /url: /episodes/episode-027
+          - img "Человек, который не упрощает" [ref=e317]
+          - generic [ref=e318]:
+            - paragraph [ref=e319]: Эпизод 027
+            - heading "Человек, который не упрощает" [level=3] [ref=e320]
+            - paragraph [ref=e321]: Во второй раз встречаться с человеком труднее, чем в первый.
+            - generic [ref=e322]: Читать далее...
+        - link "Читать Тетрадь в сейфе" [ref=e323] [cursor=pointer]:
+          - /url: /episodes/episode-028
+          - img "Тетрадь в сейфе" [ref=e324]
+          - generic [ref=e325]:
+            - paragraph [ref=e326]: Эпизод 028
+            - heading "Тетрадь в сейфе" [level=3] [ref=e327]
+            - paragraph [ref=e328]: Признание начинается задолго до слов.
+            - generic [ref=e329]: Читать далее...
+        - link "Читать Черновик перевода" [ref=e330] [cursor=pointer]:
+          - /url: /episodes/episode-029
+          - img "Черновик перевода" [ref=e331]
+          - generic [ref=e332]:
+            - paragraph [ref=e333]: Эпизод 029
+            - heading "Черновик перевода" [level=3] [ref=e334]
+            - paragraph [ref=e335]: Форма перевода оказалась оскорбительно короткой.
+            - generic [ref=e336]: Читать далее...
+        - link "Читать Лишняя пустота в отчёте" [ref=e337] [cursor=pointer]:
+          - /url: /episodes/episode-030
+          - img "Лишняя пустота в отчёте" [ref=e338]
+          - generic [ref=e339]:
+            - paragraph [ref=e340]: Эпизод 030
+            - heading "Лишняя пустота в отчёте" [level=3] [ref=e341]
+            - paragraph [ref=e342]: Дыра в отчёте выглядела почти невинно.
+            - generic [ref=e343]: Читать далее...
+        - link "Читать Формальная атака" [ref=e344] [cursor=pointer]:
+          - /url: /episodes/episode-031
+          - img "Формальная атака" [ref=e345]
+          - generic [ref=e346]:
+            - paragraph [ref=e347]: Эпизод 031
+            - heading "Формальная атака" [level=3] [ref=e348]
+            - paragraph [ref=e349]: Письмо пришло в девять ноль две.
+            - generic [ref=e350]: Читать далее...
+        - link "Читать Флешка в ладони" [ref=e351] [cursor=pointer]:
+          - /url: /episodes/episode-032
+          - img "Флешка в ладони" [ref=e352]
+          - generic [ref=e353]:
+            - paragraph [ref=e354]: Эпизод 032
+            - heading "Флешка в ладони" [level=3] [ref=e355]
+            - paragraph [ref=e356]: Когда прошлое приходит в руки, оно почти всегда выглядит смешно материально.
+            - generic [ref=e357]: Читать далее...
+        - link "Читать Анонимная колонка" [ref=e358] [cursor=pointer]:
+          - /url: /episodes/episode-033
+          - img "Анонимная колонка" [ref=e359]
+          - generic [ref=e360]:
+            - paragraph [ref=e361]: Эпизод 033
+            - heading "Анонимная колонка" [level=3] [ref=e362]
+            - paragraph [ref=e363]: Название пришло не сразу.
+            - generic [ref=e364]: Читать далее...
+        - link "Читать Нет" [ref=e365] [cursor=pointer]:
+          - /url: /episodes/episode-034
+          - img "Нет" [ref=e366]
+          - generic [ref=e367]:
+            - paragraph [ref=e368]: Эпизод 034
+            - heading "Нет" [level=3] [ref=e369]
+            - paragraph [ref=e370]: "Слово `нет` оказалось короче всех её мучений."
+            - generic [ref=e371]: Читать далее...
+        - link "Читать Не поодиночке" [ref=e372] [cursor=pointer]:
+          - /url: /episodes/episode-035
+          - img "Не поодиночке" [ref=e373]
+          - generic [ref=e374]:
+            - paragraph [ref=e375]: Эпизод 035
+            - heading "Не поодиночке" [level=3] [ref=e376]
+            - paragraph [ref=e377]: Решение бороться редко выглядит красиво.
+            - generic [ref=e378]: Читать далее...
+        - link "Читать Закрытый архив" [ref=e379] [cursor=pointer]:
+          - /url: /episodes/episode-036
+          - img "Закрытый архив" [ref=e380]
+          - generic [ref=e381]:
+            - paragraph [ref=e382]: Эпизод 036
+            - heading "Закрытый архив" [level=3] [ref=e383]
+            - paragraph [ref=e384]: Закрытые архивы всегда выглядят скучно.
+            - generic [ref=e385]: Читать далее...
+        - link "Читать Слишком честный вечер" [ref=e386] [cursor=pointer]:
+          - /url: /episodes/episode-037
+          - img "Слишком честный вечер" [ref=e387]
+          - generic [ref=e388]:
+            - paragraph [ref=e389]: Эпизод 037
+            - heading "Слишком честный вечер" [level=3] [ref=e390]
+            - paragraph [ref=e391]: Они собирались обсуждать только материалы из архива.
+            - generic [ref=e392]: Читать далее...
+        - link "Читать Один голос вслух" [ref=e393] [cursor=pointer]:
+          - /url: /episodes/episode-038
+          - img "Один голос вслух" [ref=e394]
+          - generic [ref=e395]:
+            - paragraph [ref=e396]: Эпизод 038
+            - heading "Один голос вслух" [level=3] [ref=e397]
+            - paragraph [ref=e398]: Читать вслух оказалось страшнее публикации.
+            - generic [ref=e399]: Читать далее...
+        - link "Читать Не слабее" [ref=e400] [cursor=pointer]:
+          - /url: /episodes/episode-039
+          - img "Не слабее" [ref=e401]
+          - generic [ref=e402]:
+            - paragraph [ref=e403]: Эпизод 039
+            - heading "Не слабее" [level=3] [ref=e404]
+            - paragraph [ref=e405]: Осознание пришло не красиво.
+            - generic [ref=e406]: Читать далее...
+        - link "Читать Почти распад" [ref=e407] [cursor=pointer]:
+          - /url: /episodes/episode-040
+          - img "Почти распад" [ref=e408]
+          - generic [ref=e409]:
+            - paragraph [ref=e410]: Эпизод 040
+            - heading "Почти распад" [level=3] [ref=e411]
+            - paragraph [ref=e412]: Он бил не по общему месту.
+            - generic [ref=e413]: Читать далее...
+        - link "Читать Без подписи на двери" [ref=e414] [cursor=pointer]:
+          - /url: /episodes/episode-041
+          - img "Без подписи на двери" [ref=e415]
+          - generic [ref=e416]:
+            - paragraph [ref=e417]: Эпизод 041
+            - heading "Без подписи на двери" [level=3] [ref=e418]
+            - paragraph [ref=e419]: Ограничение полномочий пришло без театра.
+            - generic [ref=e420]: Читать далее...
+        - link "Читать Два неожиданных союзника" [ref=e421] [cursor=pointer]:
+          - /url: /episodes/episode-042
+          - img "Два неожиданных союзника" [ref=e422]
+          - generic [ref=e423]:
+            - paragraph [ref=e424]: Эпизод 042
+            - heading "Два неожиданных союзника" [level=3] [ref=e425]
+            - paragraph [ref=e426]: Иногда помощь приходит не оттуда, откуда хочется.
+            - generic [ref=e427]: Читать далее...
+        - link "Читать Скажи это мне" [ref=e428] [cursor=pointer]:
+          - /url: /episodes/episode-043
+          - img "Скажи это мне" [ref=e429]
+          - generic [ref=e430]:
+            - paragraph [ref=e431]: Эпизод 043
+            - heading "Скажи это мне" [level=3] [ref=e432]
+            - paragraph [ref=e433]: Просить о помощи оказалось труднее, чем читать стихи.
+            - generic [ref=e434]: Читать далее...
+        - link "Читать Без красивой версии" [ref=e435] [cursor=pointer]:
+          - /url: /episodes/episode-044
+          - img "Без красивой версии" [ref=e436]
+          - generic [ref=e437]:
+            - paragraph [ref=e438]: Эпизод 044
+            - heading "Без красивой версии" [level=3] [ref=e439]
+            - paragraph [ref=e440]: Правда обычно выглядит беднее легенды.
+            - generic [ref=e441]: Читать далее...
+        - link "Читать Маркет и оборона" [ref=e442] [cursor=pointer]:
+          - /url: /episodes/episode-045
+          - img "Маркет и оборона" [ref=e443]
+          - generic [ref=e444]:
+            - paragraph [ref=e445]: Эпизод 045
+            - heading "Маркет и оборона" [level=3] [ref=e446]
+            - paragraph [ref=e447]: Самое абсурдное в декабре было то, что жизнь продолжала требовать украшений.
+            - generic [ref=e448]: Читать далее...
+        - link "Читать Тихо уйти" [ref=e449] [cursor=pointer]:
+          - /url: /episodes/episode-046
+          - img "Тихо уйти" [ref=e450]
+          - generic [ref=e451]:
+            - paragraph [ref=e452]: Эпизод 046
+            - heading "Тихо уйти" [level=3] [ref=e453]
+            - paragraph [ref=e454]: Ультиматумы всегда предлагают как взрослый компромисс.
+            - generic [ref=e455]: Читать далее...
+        - link "Читать Передать часть" [ref=e456] [cursor=pointer]:
+          - /url: /episodes/episode-047
+          - img "Передать часть" [ref=e457]
+          - generic [ref=e458]:
+            - paragraph [ref=e459]: Эпизод 047
+            - heading "Передать часть" [level=3] [ref=e460]
+            - paragraph [ref=e461]: Доверие редко ощущается как красивый жест.
+            - generic [ref=e462]: Читать далее...
+        - link "Читать Для своих" [ref=e463] [cursor=pointer]:
+          - /url: /episodes/episode-048
+          - img "Для своих" [ref=e464]
+          - generic [ref=e465]:
+            - paragraph [ref=e466]: Эпизод 048
+            - heading "Для своих" [level=3] [ref=e467]
+            - paragraph [ref=e468]: Читать для чужих и читать для своих — два разных страха.
+            - generic [ref=e469]: Читать далее...
+        - link "Читать Остаюсь" [ref=e470] [cursor=pointer]:
+          - /url: /episodes/episode-049
+          - img "Остаюсь" [ref=e471]
+          - generic [ref=e472]:
+            - paragraph [ref=e473]: Эпизод 049
+            - heading "Остаюсь" [level=3] [ref=e474]
+            - paragraph [ref=e475]: Иногда выбор нужно повторить, даже если формально он уже сделан.
+            - generic [ref=e476]: Читать далее...
+        - link "Читать Но это ещё не конец" [ref=e477] [cursor=pointer]:
+          - /url: /episodes/episode-050
+          - img "Но это ещё не конец" [ref=e478]
+          - generic [ref=e479]:
+            - paragraph [ref=e480]: Эпизод 050
+            - heading "Но это ещё не конец" [level=3] [ref=e481]
+            - paragraph [ref=e482]: Разоблачение не было красивым.
+            - generic [ref=e483]: Читать далее...
+        - link "Читать Не так" [ref=e484] [cursor=pointer]:
+          - /url: /episodes/episode-051
+          - img "Не так" [ref=e485]
+          - generic [ref=e486]:
+            - paragraph [ref=e487]: Эпизод 051
+            - heading "Не так" [level=3] [ref=e488]
+            - paragraph [ref=e489]: "Силан предложил ей выход так, как умел только он: без давления, без мелодрамы, почти как взрослая забота."
+            - generic [ref=e490]: Читать далее...
+        - link "Читать Не моя вина" [ref=e491] [cursor=pointer]:
+          - /url: /episodes/episode-052
+          - img "Не моя вина" [ref=e492]
+          - generic [ref=e493]:
+            - paragraph [ref=e494]: Эпизод 052
+            - heading "Не моя вина" [level=3] [ref=e495]
+            - paragraph [ref=e496]: Прощать себя оказалось не светлым процессом.
+            - generic [ref=e497]: Читать далее...
+        - link "Читать Под своим именем" [ref=e498] [cursor=pointer]:
+          - /url: /episodes/episode-053
+          - img "Под своим именем" [ref=e499]
+          - generic [ref=e500]:
+            - paragraph [ref=e501]: Эпизод 053
+            - heading "Под своим именем" [level=3] [ref=e502]
+            - paragraph [ref=e503]: Псевдоним защищал.
+            - generic [ref=e504]: Читать далее...
+        - link "Читать Голос на городской встрече" [ref=e505] [cursor=pointer]:
+          - /url: /episodes/episode-054
+          - img "Голос на городской встрече" [ref=e506]
+          - generic [ref=e507]:
+            - paragraph [ref=e508]: Эпизод 054
+            - heading "Голос на городской встрече" [level=3] [ref=e509]
+            - paragraph [ref=e510]: Раньше Руслана умела говорить идеально.
+            - generic [ref=e511]: Читать далее...
+        - link "Читать Нарушение ради людей" [ref=e512] [cursor=pointer]:
+          - /url: /episodes/episode-055
+          - img "Нарушение ради людей" [ref=e513]
+          - generic [ref=e514]:
+            - paragraph [ref=e515]: Эпизод 055
+            - heading "Нарушение ради людей" [level=3] [ref=e516]
+            - paragraph [ref=e517]: Закрыть ПВЗ на техническое окно предлагалось аккуратно и вовремя.
+            - generic [ref=e518]: Читать далее...
+        - link "Читать Сильной из страха" [ref=e519] [cursor=pointer]:
+          - /url: /episodes/episode-056
+          - img "Сильной из страха" [ref=e520]
+          - generic [ref=e521]:
+            - paragraph [ref=e522]: Эпизод 056
+            - heading "Сильной из страха" [level=3] [ref=e523]
+            - paragraph [ref=e524]: Признание получилось не запланированным.
+            - generic [ref=e525]: Читать далее...
+        - link "Читать Без иронии как щита" [ref=e526] [cursor=pointer]:
+          - /url: /episodes/episode-057
+          - img "Без иронии как щита" [ref=e527]
+          - generic [ref=e528]:
+            - paragraph [ref=e529]: Эпизод 057
+            - heading "Без иронии как щита" [level=3] [ref=e530]
+            - paragraph [ref=e531]: Ирония много лет была для Айгуль самым красивым видом дисциплины.
+            - generic [ref=e532]: Читать далее...
+        - link "Читать Улыбка без сервиса" [ref=e533] [cursor=pointer]:
+          - /url: /episodes/episode-058
+          - img "Улыбка без сервиса" [ref=e534]
+          - generic [ref=e535]:
+            - paragraph [ref=e536]: Эпизод 058
+            - heading "Улыбка без сервиса" [level=3] [ref=e537]
+            - paragraph [ref=e538]: Это произошло в очереди.
+            - generic [ref=e539]: Читать далее...
+        - link "Читать Маленькие игрушки" [ref=e540] [cursor=pointer]:
+          - /url: /episodes/episode-059
+          - img "Маленькие игрушки" [ref=e541]
+          - generic [ref=e542]:
+            - paragraph [ref=e543]: Эпизод 059
+            - heading "Маленькие игрушки" [level=3] [ref=e544]
+            - paragraph [ref=e545]: Подарки были смешными.
+            - generic [ref=e546]: Читать далее...
+        - link "Читать Больше, чем узел выдачи" [ref=e547] [cursor=pointer]:
+          - /url: /episodes/episode-060
+          - img "Больше, чем узел выдачи" [ref=e548]
+          - generic [ref=e549]:
+            - paragraph [ref=e550]: Эпизод 060
+            - heading "Больше, чем узел выдачи" [level=3] [ref=e551]
+            - paragraph [ref=e552]: В последний день года ПВЗ перестал быть просто ПВЗ.
+            - generic [ref=e553]: Читать далее...
+        - link "Читать Дом под куполом" [ref=e554] [cursor=pointer]:
+          - /url: /episodes/episode-061
+          - img "Дом под куполом" [ref=e555]
+          - generic [ref=e556]:
+            - paragraph [ref=e557]: Эпизод 061
+            - heading "Дом под куполом" [level=3] [ref=e558]
+            - paragraph [ref=e559]: Лира долго называла Марс местом, где надо выдержать.
+            - generic [ref=e560]: Читать далее...
+        - link "Читать Кофе после года" [ref=e561] [cursor=pointer]:
+          - /url: /episodes/episode-062
+          - img "Кофе после года" [ref=e562]
+          - generic [ref=e563]:
+            - paragraph [ref=e564]: Эпизод 062
+            - heading "Кофе после года" [level=3] [ref=e565]
+            - paragraph [ref=e566]: Сообщение она писала дольше, чем любой служебный отчёт этого месяца.
+            - generic [ref=e567]: Читать далее...
+        - link "Читать Искусственный снег" [ref=e568] [cursor=pointer]:
+          - /url: /episodes/episode-063
+          - img "Искусственный снег" [ref=e569]
+          - generic [ref=e570]:
+            - paragraph [ref=e571]: Эпизод 063
+            - heading "Искусственный снег" [level=3] [ref=e572]
+            - paragraph [ref=e573]: Снег под куполом всегда казался немного нелепым.
+            - generic [ref=e574]: Читать далее...
+  - contentinfo [ref=e126]:
+    - paragraph [ref=e127]: Mars90210 — литературный сайт о жизни под куполом, надёжности и праве оставаться живыми.

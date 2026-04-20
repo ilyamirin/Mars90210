@@ -1,0 +1,85 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Mars90210" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Основная" [ref=e6]:
+      - link "Героини" [active] [ref=e7] [cursor=pointer]:
+        - /url: /characters
+      - link "Эпизоды" [ref=e8] [cursor=pointer]:
+        - /url: /episodes
+      - link "Мир" [ref=e9] [cursor=pointer]:
+        - /url: /world
+      - link "О проекте" [ref=e10] [cursor=pointer]:
+        - /url: /about
+  - main [ref=e11]:
+    - generic [ref=e575]:
+      - generic [ref=e576]:
+        - paragraph [ref=e577]: Героини
+        - heading "Четыре героини" [level=2] [ref=e578]
+        - paragraph [ref=e579]: Тап по портрету открывает личную страницу без лишнего служебного шума.
+      - generic [ref=e580]:
+        - link "Айгуль" [ref=e581] [cursor=pointer]:
+          - /url: /characters/aigul
+          - img "Портрет героини Айгуль" [ref=e583]
+          - generic [ref=e584]:
+            - paragraph [ref=e585]: Айгуль
+            - paragraph [ref=e586]: Айгуль не хочет снова быть зависимой от чужой честности. Но за этой защитой давно спрятано не достоинство, а голод по нежности и равному взгляду.
+            - generic [ref=e587]: Читать далее...
+        - link "Алина" [ref=e588] [cursor=pointer]:
+          - /url: /characters/alina
+          - img "Портрет героини Алина" [ref=e590]
+          - generic [ref=e591]:
+            - paragraph [ref=e592]: Алина
+            - paragraph [ref=e593]
+            - generic [ref=e594]: Читать далее...
+        - link "Данил" [ref=e595] [cursor=pointer]:
+          - /url: /characters/danil
+          - img "Портрет героини Данил" [ref=e597]
+          - generic [ref=e598]:
+            - paragraph [ref=e599]: Данил
+            - paragraph [ref=e600]
+            - generic [ref=e601]: Читать далее...
+        - link "Эйрон" [ref=e602] [cursor=pointer]:
+          - /url: /characters/eyron
+          - img "Портрет героини Эйрон" [ref=e604]
+          - generic [ref=e605]:
+            - paragraph [ref=e606]: Эйрон
+            - paragraph [ref=e607]: Он давно выбрал идею и работу раньше близости. Поэтому рядом с Айгуль ему приходится учиться не только убеждать, но и слышать.
+            - generic [ref=e608]: Читать далее...
+        - link "Лира" [ref=e609] [cursor=pointer]:
+          - /url: /characters/lira
+          - img "Портрет героини Лира" [ref=e611]
+          - generic [ref=e612]:
+            - paragraph [ref=e613]: Лира
+            - paragraph [ref=e614]: Лира боится, что если перестанет держать всех на своих плечах, рядом с ней никого не останется. Она путает любовь с благодарностью, а близость — с полезностью.
+            - generic [ref=e615]: Читать далее...
+        - link "Марта" [ref=e616] [cursor=pointer]:
+          - /url: /characters/marta
+          - img "Портрет героини Марта" [ref=e618]
+          - generic [ref=e619]:
+            - paragraph [ref=e620]: Марта
+            - paragraph [ref=e621]: Марта умеет слышать других, но не умеет занимать пространство собственным голосом. Её стихи — не хобби, а тайная форма существования, которой она стыдится именно потому, что она настоящая.
+            - generic [ref=e622]: Читать далее...
+        - link "Руслана" [ref=e623] [cursor=pointer]:
+          - /url: /characters/ruslana
+          - img "Портрет героини Руслана" [ref=e625]
+          - generic [ref=e626]:
+            - paragraph [ref=e627]: Руслана
+            - paragraph [ref=e628]: Руслана боится, что желание тихой жизни уничтожит тот образ сильной женщины, который помог ей выжить. Ей кажется, что признаться в этой мечте — всё равно что добровольно проиграть.
+            - generic [ref=e629]: Читать далее...
+        - link "Силан" [ref=e630] [cursor=pointer]:
+          - /url: /characters/silan
+          - img "Портрет героини Силан" [ref=e632]
+          - generic [ref=e633]:
+            - paragraph [ref=e634]: Силан
+            - paragraph [ref=e635]: Силан слишком хорошо понимает, как работает власть, чтобы верить в невинность банка, и слишком встроен в эту систему, чтобы легко сказать ей «нет».
+            - generic [ref=e636]: Читать далее...
+        - link "Владимир" [ref=e637] [cursor=pointer]:
+          - /url: /characters/vladimir
+          - img "Портрет героини Владимир" [ref=e639]
+          - generic [ref=e640]:
+            - paragraph [ref=e641]: Владимир
+            - paragraph
+            - generic [ref=e642]: Читать далее...
+  - contentinfo [ref=e126]:
+    - paragraph [ref=e127]: Mars90210 — литературный сайт о жизни под куполом, надёжности и праве оставаться живыми.

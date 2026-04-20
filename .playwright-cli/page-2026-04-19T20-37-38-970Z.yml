@@ -1,0 +1,119 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Mars90210" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Основная" [ref=e6]:
+      - link "Героини" [ref=e7] [cursor=pointer]:
+        - /url: /characters
+      - link "Эпизоды" [ref=e8] [cursor=pointer]:
+        - /url: /episodes
+      - link "Мир" [ref=e9] [cursor=pointer]:
+        - /url: /world
+      - link "О проекте" [ref=e10] [cursor=pointer]:
+        - /url: /about
+  - main [ref=e11]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - paragraph [ref=e14]: Сезон 1
+        - heading "Эпизоды" [level=2] [ref=e15]
+        - paragraph [ref=e16]: Читать сезон как последовательность маленьких сдвигов, а не как архив синопсисов.
+      - generic [ref=e17]:
+        - link "Читать Синий рукав, красный сигнал" [ref=e18] [cursor=pointer]:
+          - /url: /episodes/episode-001
+          - img "Синий рукав, красный сигнал" [ref=e20]
+          - generic [ref=e21]:
+            - paragraph [ref=e22]: Эпизод 001
+            - heading "Синий рукав, красный сигнал" [level=3] [ref=e23]
+            - paragraph [ref=e24]: "Лира проснулась раньше будильника — от той особенной тишины, которая бывает только под куполом перед началом рабочего дня, когда город ещё не заговорил, но уже дышит. На кухонной панели медленно проступали цифры времени. Вода в чайнике едва слышно шуршала. Снаружи, за светлым стеклом, лежал привычный марсианский рассвет: не розовый, не земной, а ржаво-золотой, как будто кто-то осторожно тёр о небо старую медь."
+            - generic [ref=e25]: Читать далее...
+        - link "Читать То, что остаётся в логах" [ref=e26] [cursor=pointer]:
+          - /url: /episodes/episode-002
+          - img "То, что остаётся в логах" [ref=e28]
+          - generic [ref=e29]:
+            - paragraph [ref=e30]: Эпизод 002
+            - heading "То, что остаётся в логах" [level=3] [ref=e31]
+            - paragraph [ref=e32]: Айгуль пришла в ПВЗ раньше всех, кроме машин.
+            - generic [ref=e33]: Читать далее...
+        - link "Читать Улыбка по регламенту" [ref=e34] [cursor=pointer]:
+          - /url: /episodes/episode-003
+          - img "Улыбка по регламенту" [ref=e36]
+          - generic [ref=e37]:
+            - paragraph [ref=e38]: Эпизод 003
+            - heading "Улыбка по регламенту" [level=3] [ref=e39]
+            - paragraph [ref=e40]: К полудню Марта уже чувствовала, как день оседает на ней мелкой усталой пылью.
+            - generic [ref=e41]: Читать далее...
+        - link "Читать Письмо с Земли" [ref=e42] [cursor=pointer]:
+          - /url: /episodes/episode-004
+          - img "Письмо с Земли" [ref=e44]
+          - generic [ref=e45]:
+            - paragraph [ref=e46]: Эпизод 004
+            - heading "Письмо с Земли" [level=3] [ref=e47]
+            - paragraph [ref=e48]: Письмо лежало на стойке, плоское, официальное, с земной маркировкой и сухой синей полосой безопасности по краю.
+            - generic [ref=e49]: Читать далее...
+        - link "Читать После закрытия" [ref=e50] [cursor=pointer]:
+          - /url: /episodes/episode-005
+          - img "После закрытия" [ref=e52]
+          - generic [ref=e53]:
+            - paragraph [ref=e54]: Эпизод 005
+            - heading "После закрытия" [level=3] [ref=e55]
+            - paragraph [ref=e56]: В субботу ПВЗ закрывался не позже обычного, но тишина после закрытия всегда была другой.
+            - generic [ref=e57]: Читать далее...
+        - link "Читать Человек из банка" [ref=e58] [cursor=pointer]:
+          - /url: /episodes/episode-006
+          - img "Человек из банка" [ref=e60]
+          - generic [ref=e61]:
+            - paragraph [ref=e62]: Эпизод 006
+            - heading "Человек из банка" [level=3] [ref=e63]
+            - paragraph [ref=e64]: Силан пришёл в ПВЗ в десять минут одиннадцатого — не рано и не поздно, а ровно в то время, которое человек с хорошим воспитанием выбирает, если не хочет казаться ни виноватым, ни слишком уверенным.
+            - generic [ref=e65]: Читать далее...
+        - link "Читать Чужое прошлое на грузовом терминале" [ref=e66] [cursor=pointer]:
+          - /url: /episodes/episode-007
+          - img "Иллюстрация к эпизоду 007 появится позже" [ref=e67]: Иллюстрация появится позже
+          - generic [ref=e68]:
+            - paragraph [ref=e69]: Эпизод 007
+            - heading "Чужое прошлое на грузовом терминале" [level=3] [ref=e70]
+            - paragraph [ref=e71]: Вечером логистика всегда звучала иначе.
+            - generic [ref=e72]: Читать далее...
+        - link "Читать Плохое стихотворение" [ref=e73] [cursor=pointer]:
+          - /url: /episodes/episode-008
+          - img "Иллюстрация к эпизоду 008 появится позже" [ref=e74]: Иллюстрация появится позже
+          - generic [ref=e75]:
+            - paragraph [ref=e76]: Эпизод 008
+            - heading "Плохое стихотворение" [level=3] [ref=e77]
+            - paragraph [ref=e78]: Ночью квартира Марты становилась меньше.
+            - generic [ref=e79]: Читать далее...
+        - link "Читать Всё отлично" [ref=e80] [cursor=pointer]:
+          - /url: /episodes/episode-009
+          - img "Иллюстрация к эпизоду 009 появится позже" [ref=e81]: Иллюстрация появится позже
+          - generic [ref=e82]:
+            - paragraph [ref=e83]: Эпизод 009
+            - heading "Всё отлично" [level=3] [ref=e84]
+            - paragraph [ref=e85]: Руслана ненавидела пятничные звонки домой.
+            - generic [ref=e86]: Читать далее...
+        - link "Читать Слова, сказанные как будто между прочим" [ref=e87] [cursor=pointer]:
+          - /url: /episodes/episode-010
+          - img "Иллюстрация к эпизоду 010 появится позже" [ref=e88]: Иллюстрация появится позже
+          - generic [ref=e89]:
+            - paragraph [ref=e90]: Эпизод 010
+            - heading "Слова, сказанные как будто между прочим" [level=3] [ref=e91]
+            - paragraph [ref=e92]: Владимир умел заходить в пространство так, будто уже давно в нём хозяин.
+            - generic [ref=e93]: Читать далее...
+        - link "Читать Чай, который нельзя назвать свиданием" [ref=e94] [cursor=pointer]:
+          - /url: /episodes/episode-011
+          - img "Иллюстрация к эпизоду 011 появится позже" [ref=e95]: Иллюстрация появится позже
+          - generic [ref=e96]:
+            - paragraph [ref=e97]: Эпизод 011
+            - heading "Чай, который нельзя назвать свиданием" [level=3] [ref=e98]
+            - paragraph [ref=e99]: Лира весь день собирала себя по частям.
+            - generic [ref=e100]: Читать далее...
+        - link "Читать Дневник на дне ящика" [ref=e101] [cursor=pointer]:
+          - /url: /episodes/episode-012
+          - img "Иллюстрация к эпизоду 012 появится позже" [ref=e102]: Иллюстрация появится позже
+          - generic [ref=e103]:
+            - paragraph [ref=e104]: Эпизод 012
+            - heading "Дневник на дне ящика" [level=3] [ref=e105]
+            - paragraph [ref=e106]: Айгуль редко открывала нижний ящик.
+            - generic [ref=e107]: Читать далее...
+      - button "Показать ещё" [ref=e110]
+  - contentinfo [ref=e111]:
+    - paragraph [ref=e112]: Mars90210 — литературный сайт о жизни под куполом, надёжности и праве оставаться живыми.

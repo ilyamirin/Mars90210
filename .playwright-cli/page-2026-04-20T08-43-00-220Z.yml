@@ -1,0 +1,33 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - link "Mars90210" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - navigation "Основная" [ref=e6]:
+      - link "Персонажи" [ref=e7] [cursor=pointer]:
+        - /url: /characters
+      - link "Эпизоды" [ref=e8] [cursor=pointer]:
+        - /url: /episodes
+      - link "Мир" [ref=e9] [cursor=pointer]:
+        - /url: /world
+      - link "О проекте" [ref=e10] [cursor=pointer]:
+        - /url: /about
+  - main [ref=e11]:
+    - article [ref=e217]:
+      - paragraph [ref=e218]: антагонист
+      - generic [ref=e219]:
+        - img "Портрет персонажа Владимир" [ref=e221]: Портрет появится позже
+        - generic [ref=e222]:
+          - heading "Владимир" [level=1] [ref=e223]
+          - paragraph [ref=e224]: Региональный начальник Orbita, который умеет говорить почти вежливо именно в ту секунду, когда переводит людей в разряд лишних.
+          - generic [ref=e225]:
+            - heading "Кто он" [level=2] [ref=e226]
+            - paragraph [ref=e227]:
+              - text: Владимиру сорок два. Он отвечает за региональные операции
+              - code [ref=e228]: Orbita
+              - text: и искренне считает, что сочувствие мешает эффективности.
+            - heading "Как его писать" [level=2] [ref=e229]
+            - paragraph [ref=e230]: Он опасен не потому, что громко злой, а потому, что умеет говорить почти доброжелательно в момент, когда лишает человека опоры.
+      - link "Назад к персонажам" [ref=e231] [cursor=pointer]:
+        - /url: /characters
+  - contentinfo [ref=e135]:
+    - paragraph [ref=e136]: Mars90210 — литературный сайт о жизни под куполом, надёжности и праве оставаться живыми.

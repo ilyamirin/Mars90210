@@ -5,6 +5,7 @@ import { AboutPage } from '../features/about/AboutPage';
 import { EpisodePage } from '../features/episodes/EpisodePage';
 import { EpisodesPage } from '../features/episodes/EpisodesPage';
 import { HomePage } from '../features/home/HomePage';
+import { NotFoundPage } from '../features/not-found/NotFoundPage';
 import { WorldPage } from '../features/world/WorldPage';
 
 export const routes: RouteObject[] = [
@@ -35,5 +36,9 @@ export const routes: RouteObject[] = [
   {
     path: '/about',
     element: <AboutPage />,
+  },
+  {
+    path: '*',
+    element: <NotFoundPage />,
   },
 ];
