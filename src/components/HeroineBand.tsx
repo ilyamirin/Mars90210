@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import type { CharacterEntry } from '../content/types';
+import { MediaImage } from './MediaImage';
 
 const toneMap: Record<string, string> = {
   lira: 'tone-denim',
@@ -20,11 +21,7 @@ export function HeroineBand({ characters }: { characters: CharacterEntry[] }) {
           className={`heroine-panel ${toneMap[character.slug] ?? 'tone-denim'}`}
         >
           <div className="heroine-portrait-frame" data-testid={`heroine-portrait-${character.slug}`}>
-            <img
-              className="heroine-portrait"
-              src={character.portrait.src}
-              alt={character.portrait.alt}
-            />
+            <MediaImage image={character.portrait} className="heroine-portrait" />
           </div>
           <div className="heroine-copy" data-testid={`heroine-copy-${character.slug}`}>
             <p className="heroine-name">{character.name}</p>

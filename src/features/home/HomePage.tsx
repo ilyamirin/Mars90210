@@ -1,5 +1,6 @@
 import { EpisodeCard } from '../../components/EpisodeCard';
 import { HeroineBand } from '../../components/HeroineBand';
+import { MediaImage } from '../../components/MediaImage';
 import { SectionHeading } from '../../components/SectionHeading';
 import { buildContentStore } from '../../content/loaders/contentStore';
 import { Link } from 'react-router-dom';
@@ -82,7 +83,7 @@ export function HomePage() {
         <div className="world-preview-grid">
           {worldPreview.map((entry) => (
             <article key={entry.slug} className="world-preview-card">
-              <img src={entry.relatedImages[0].src} alt={entry.relatedImages[0].alt} />
+              <MediaImage image={entry.relatedImages[0]} className="world-preview-media" />
               <div className="world-preview-copy">
                 <h3>{entry.title}</h3>
                 <p>{entry.excerpt}</p>

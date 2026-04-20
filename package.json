@@ -4,9 +4,14 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
+    "predev": "pnpm content:prepare",
     "dev": "vite",
+    "prebuild": "pnpm content:prepare",
     "build": "tsc --noEmit && vite build",
     "preview": "vite preview",
+    "content:prepare": "pnpm media:optimize && pnpm content:generate",
+    "content:generate": "node scripts/generate-episodes-manifest.mjs",
+    "media:optimize": "node scripts/optimize-media.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

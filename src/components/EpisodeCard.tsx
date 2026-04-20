@@ -1,14 +1,19 @@
 import { Link } from 'react-router-dom';
-import type { EpisodeEntry } from '../content/types';
+import type { EpisodeSummaryEntry } from '../content/types';
+import { MediaImage } from './MediaImage';
 
-export function EpisodeCard({ episode }: { episode: EpisodeEntry }) {
+export function EpisodeCard({ episode }: { episode: EpisodeSummaryEntry }) {
   return (
     <Link
       to={`/episodes/${episode.slug}`}
       className="episode-card"
       aria-label={`Читать ${episode.title}`}
     >
-      <img src={episode.illustration.src} alt={episode.illustration.alt} />
+      <MediaImage
+        image={episode.illustration}
+        className="episode-card-media"
+        sizes="(min-width: 1440px) 28vw, (min-width: 1200px) 30vw, (min-width: 720px) 45vw, 100vw"
+      />
       <div className="episode-card-copy">
         <p className="section-eyebrow">Эпизод {String(episode.number).padStart(3, '0')}</p>
         <h3>{episode.title}</h3>

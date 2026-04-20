@@ -1,4 +1,5 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
+import { MediaImage } from '../../components/MediaImage';
 import { MarkdownProse } from '../../components/MarkdownProse';
 import { buildContentStore } from '../../content/loaders/contentStore';
 
@@ -15,11 +16,7 @@ export function CharacterPage() {
       <p className="section-eyebrow">Героиня</p>
       <div className="character-hero">
         <div className="character-portrait-block" data-testid="character-portrait-block">
-          <img
-            className="character-portrait"
-            src={character.portrait.src}
-            alt={character.portrait.alt}
-          />
+          <MediaImage image={character.portrait} className="character-portrait" />
         </div>
         <div className="character-copy" data-testid="character-copy-block">
           <h1>{character.name}</h1>

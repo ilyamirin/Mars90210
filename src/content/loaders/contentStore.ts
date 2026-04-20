@@ -2,9 +2,9 @@ import type {
   AboutSectionEntry,
   CharacterEntry,
   ContentStore,
-  EpisodeEntry,
   WorldEntry,
 } from '../types';
+import { getEpisodeSummaries } from './episodeContent';
 import {
   excerptParagraphs,
   extractBullets,
@@ -17,14 +17,7 @@ import {
   stripLeadSections,
   stripSeriesPrefix,
 } from './parseMarkdown';
-import {
-  aboutMarkdown,
-  characterMarkdown,
-  episodeMarkdown,
-  illustrationImages,
-  portraitImages,
-  worldMarkdown,
-} from './rawImports';
+import { aboutMarkdown, characterMarkdown, worldMarkdown } from './rawImports';
 
 function pathSlug(path: string) {
   return path.split('/').pop()!.replace('.md', '');
@@ -43,36 +36,46 @@ function toAltFromName(name: string) {
   return `Портрет героини ${name}`;
 }
 
+function optimizedPngPath(relativePath: string) {
+  return `/media/optimized/${relativePath}`;
+}
+
+function optimizedWebpPath(relativePath: string) {
+  return optimizedPngPath(relativePath).replace(/\.png$/i, '.avif');
+}
+
 function portraitPath(slug: string) {
-  return `/art/portraits/heroines/${slug}/portrait.png`;
+  return `portraits/heroines/${slug}/portrait.png`;
 }
 
 function worldImageMap(slug: string) {
   const bySlug: Record<string, string[]> = {
     locations: [
-      '/art/season-01/episode-001/illustration.png',
-      '/art/season-01/episode-004/illustration.png',
+      'season-01/episode-001/illustration.png',
+      'season-01/episode-004/illustration.png',
     ],
     setting: [
-      '/art/season-01/episode-002/illustration.png',
-      '/art/season-01/episode-006/illustration.png',
+      'season-01/episode-002/illustration.png',
+      'season-01/episode-006/illustration.png',
     ],
     symbols: [
-      '/art/season-01/episode-003/illustration.png',
-      '/art/season-01/episode-004/illustration.png',
+      'season-01/episode-003/illustration.png',
+      'season-01/episode-004/illustration.png',
     ],
     'visual-language': [
-      '/art/season-01/episode-005/illustration.png',
-      '/art/season-01/episode-006/illustration.png',
+      'season-01/episode-005/illustration.png',
+      'season-01/episode-006/illustration.png',
     ],
     institutions: [
-      '/art/season-01/episode-001/illustration.png',
-      '/art/season-01/episode-002/illustration.png',
+      'season-01/episode-001/illustration.png',
+      'season-01/episode-002/illustration.png',
     ],
   };
 
-  return (bySlug[slug] ?? ['/art/season-01/episode-001/illustration.png']).map((path) => ({
-    src: illustrationImages[path] as string,
+  return (bySlug[slug] ?? ['season-01/episode-001/illustration.png']).map((relativePath) => ({
+    src: optimizedPngPath(relativePath),
+    pngSrc: optimizedPngPath(relativePath),
+    avifSrc: optimizedWebpPath(relativePath),
     alt: 'Иллюстрация мира Mars90210',
   }));
 }
@@ -96,7 +99,9 @@ function buildCharacters(): Record<string, CharacterEntry> {
           signatureItem: selectSignatureItem(appearanceBullets),
           tagline: extractParagraph(extractSection(markdown, 'Внутренний конфликт')),
           portrait: {
-            src: portraitImages[portraitPath(slug)] as string,
+            src: optimizedPngPath(portraitPath(slug)),
+            pngSrc: optimizedPngPath(portraitPath(slug)),
+            avifSrc: optimizedWebpPath(portraitPath(slug)),
             alt: toAltFromName(name),
           },
           markdown,
@@ -106,34 +111,6 @@ function buildCharacters(): Record<string, CharacterEntry> {
       ];
     }),
   );
-}
-
-function buildEpisodes(): EpisodeEntry[] {
-  return Object.entries(episodeMarkdown)
-    .map(([path, markdownValue]) => {
-      const markdown = markdownValue as string;
-      const fileSlug = pathSlug(path);
-      const slug = fileSlug.toLowerCase();
-      const episodeFolder = `/art/season-01/${slug}/illustration.png`;
-      const episodeNumber = Number(slug.split('-')[1]);
-
-      return {
-        slug,
-        number: episodeNumber,
-        title: extractMetadataValue(markdown, 'Заголовок'),
-        focus: extractMetadataValue(markdown, 'Фокус'),
-        timePoint: extractMetadataValue(markdown, 'Временная точка'),
-        keyScene: extractMetadataValue(markdown, 'Ключевая сцена'),
-        excerpt: firstParagraph(stripLeadSections(markdown)),
-        illustration: {
-          src: illustrationImages[episodeFolder] as string,
-          alt: extractMetadataValue(markdown, 'Заголовок'),
-        },
-        markdown,
-        bodyMarkdown: stripLeadSections(markdown),
-      };
-    })
-    .sort((left, right) => left.number - right.number);
 }
 
 function buildWorld(): WorldEntry[] {
@@ -191,7 +168,7 @@ export function buildContentStore(): ContentStore {
 
   cache = {
     characters: buildCharacters(),
-    episodes: buildEpisodes(),
+    episodes: getEpisodeSummaries(),
     world: buildWorld(),
     about: buildAbout(),
   };

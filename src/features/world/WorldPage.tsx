@@ -1,3 +1,4 @@
+import { MediaImage } from '../../components/MediaImage';
 import { SectionHeading } from '../../components/SectionHeading';
 import { buildContentStore } from '../../content/loaders/contentStore';
 
@@ -16,7 +17,11 @@ export function WorldPage() {
           <article key={entry.slug} className="world-entry world-entry-visual">
             <div className="world-entry-gallery">
               {entry.relatedImages.slice(0, 2).map((image) => (
-                <img key={`${entry.slug}-${image.src}`} src={image.src} alt={image.alt} />
+                <MediaImage
+                  key={`${entry.slug}-${image.src || image.alt}`}
+                  image={image}
+                  className="world-entry-gallery-media"
+                />
               ))}
             </div>
             <div className="world-entry-copy">

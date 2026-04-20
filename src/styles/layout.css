@@ -207,7 +207,21 @@
   aspect-ratio: 3 / 4;
 }
 
-.heroine-portrait {
+.heroine-portrait,
+.episode-card-media,
+.illustration-figure-media,
+.world-preview-media,
+.world-entry-gallery-media,
+.character-portrait {
+  display: block;
+}
+
+.heroine-portrait img,
+.episode-card-media img,
+.illustration-figure-media img,
+.world-preview-media img,
+.world-entry-gallery-media img,
+.character-portrait img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -273,14 +287,29 @@
   color: inherit;
 }
 
-.episode-card img,
-.illustration-figure img,
-.world-preview-card img,
-.world-entry-gallery img,
-.character-portrait {
+.episode-card-media,
+.illustration-figure-media,
+.world-preview-media,
+.world-entry-gallery-media,
+.character-portrait,
+.media-placeholder {
   width: 100%;
   border-radius: calc(var(--radius-lg) - 10px);
-  object-fit: cover;
+  overflow: hidden;
+}
+
+.media-placeholder {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 16 / 10;
+  min-height: 14rem;
+  padding: var(--space-4);
+  border: 1px dashed rgba(139, 59, 49, 0.26);
+  background:
+    radial-gradient(circle at 80% 18%, rgba(201, 112, 89, 0.14), transparent 22%),
+    linear-gradient(180deg, rgba(255, 248, 242, 0.92), rgba(235, 214, 204, 0.82));
+  color: var(--text-secondary);
+  text-align: center;
 }
 
 .episode-card .micro-link {
@@ -325,6 +354,17 @@
 .episode-card h3 {
   font-size: 1.35rem;
   letter-spacing: -0.03em;
+}
+
+.episodes-load-more {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-3);
+}
+
+.episodes-sentinel {
+  width: 100%;
+  height: 1px;
 }
 
 .about-teaser,
@@ -384,10 +424,90 @@
   padding: var(--space-5);
 }
 
+.episode-reader-shell {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.episode-reader-rail-column,
+.episode-reader-body {
+  display: grid;
+  gap: var(--space-4);
+  align-content: start;
+}
+
+.episode-rail {
+  display: grid;
+  gap: var(--space-3);
+}
+
+.episode-rail-panel {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  background: var(--bg-panel);
+}
+
+.episode-rail-progress-text {
+  color: var(--text-secondary);
+  font-family: var(--font-ui);
+}
+
+.episode-progress {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 999px;
+  background: rgba(139, 59, 49, 0.12);
+  overflow: hidden;
+}
+
+.episode-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, rgba(184, 92, 69, 0.9), rgba(87, 47, 39, 0.9));
+}
+
+.episode-jump {
+  display: grid;
+  gap: 0.55rem;
+  font-family: var(--font-ui);
+  font-size: 0.92rem;
+}
+
+.episode-jump select {
+  min-height: 2.9rem;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid var(--line-soft);
+  border-radius: calc(var(--radius-lg) - 12px);
+  background: rgba(255, 248, 242, 0.8);
+  color: var(--text-primary);
+  font: inherit;
+}
+
 .episode-nav {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
+  justify-content: space-between;
+}
+
+.episodes-stack .episode-card {
+  grid-template-columns: 1fr;
+  align-items: start;
+}
+
+.episodes-stack .episode-card-copy {
+  align-content: start;
+}
+
+.episodes-stack .episode-card p:not(.section-eyebrow) {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
 }
 
 @media (min-width: 720px) {
@@ -408,7 +528,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .episode-card,
+  .episode-mosaic .episode-card,
   .about-teaser,
   .about-section {
     grid-template-columns: 1.02fr 0.98fr;
@@ -418,5 +538,47 @@
   .character-hero {
     grid-template-columns: 0.88fr 1.12fr;
     align-items: start;
+  }
+
+  .episodes-stack {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1200px) {
+  .site-header,
+  .site-footer,
+  .site-main {
+    width: min(calc(100% - 3rem), 1380px);
+  }
+
+  .episodes-stack {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .episode-reader-shell {
+    grid-template-columns: minmax(18rem, 24rem) minmax(0, 1fr);
+    align-items: start;
+    gap: var(--space-6);
+  }
+
+  .episode-reader-rail-column {
+    position: sticky;
+    top: 1.5rem;
+  }
+
+  .episode-reader-body .markdown-prose p,
+  .episode-reader-body .markdown-prose ul {
+    max-width: 72ch;
+  }
+}
+
+@media (min-width: 1440px) {
+  .episode-reader-shell {
+    grid-template-columns: minmax(22rem, 28rem) minmax(0, 1fr);
+  }
+
+  .episodes-stack {
+    gap: var(--space-5);
   }
 }

@@ -12,7 +12,9 @@ describe('buildContentStore', () => {
   test('attaches portrait assets and short text to heroines', () => {
     const store = buildContentStore();
 
-    expect(store.characters.lira.portrait.src).toContain('art/portraits/heroines/lira/portrait.png');
+    expect(store.characters.lira.portrait.src).toContain(
+      '/media/optimized/portraits/heroines/lira/portrait.png',
+    );
     expect(store.characters.marta.tagline.length).toBeGreaterThan(10);
     expect(store.characters.ruslana.shortBodyMarkdown.length).toBeLessThan(
       store.characters.ruslana.bodyMarkdown.length,
@@ -25,20 +27,28 @@ describe('buildContentStore', () => {
     expect(store.episodes[0].slug).toBe('episode-001');
     expect(store.episodes[1].slug).toBe('episode-002');
     expect(store.episodes[0].excerpt.length).toBeGreaterThan(10);
+    expect('bodyMarkdown' in store.episodes[0]).toBe(false);
   });
 
-  test('attaches illustration path to episode entries', () => {
+  test('attaches optimized illustration path to episode entries when art exists', () => {
     const store = buildContentStore();
 
-    expect(store.episodes[0].illustration.src).toContain('art/season-01/episode-001/illustration.png');
+    expect(store.episodes[0].illustration.avifSrc).toContain(
+      '/media/optimized/season-01/episode-001/illustration.avif',
+    );
+    expect(store.episodes[0].illustration.pngSrc).toContain(
+      '/media/optimized/season-01/episode-001/illustration.png',
+    );
+    expect(store.episodes[0].illustration.width).toBeGreaterThan(0);
+    expect(store.episodes[0].illustration.height).toBeGreaterThan(0);
   });
 
-  test('keeps technical art-sidecar prose out of renderable content', () => {
+  test('marks episodes without illustration as placeholders instead of broken images', () => {
     const store = buildContentStore();
 
-    expect(store.episodes[0].bodyMarkdown).not.toContain('Prediction ID');
-    expect(store.episodes[0].bodyMarkdown).not.toContain('Prompt');
-    expect(store.episodes[0].bodyMarkdown).not.toContain('Файл вывода');
+    expect(store.episodes.at(-1)?.slug).toBe('episode-063');
+    expect(store.episodes.at(-1)?.illustration.isPlaceholder).toBe(true);
+    expect(store.episodes.at(-1)?.illustration.src).toBe('');
   });
 
   test('returns world entries with image and short excerpt', () => {

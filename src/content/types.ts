@@ -1,6 +1,11 @@
 export interface IllustrationEntry {
   src: string;
   alt: string;
+  pngSrc?: string;
+  avifSrc?: string;
+  width?: number;
+  height?: number;
+  isPlaceholder?: boolean;
 }
 
 export interface CharacterEntry {
@@ -15,7 +20,7 @@ export interface CharacterEntry {
   shortBodyMarkdown: string;
 }
 
-export interface EpisodeEntry {
+export interface EpisodeSummaryEntry {
   slug: string;
   number: number;
   title: string;
@@ -24,6 +29,9 @@ export interface EpisodeEntry {
   keyScene: string;
   excerpt: string;
   illustration: IllustrationEntry;
+}
+
+export interface EpisodeEntry extends EpisodeSummaryEntry {
   markdown: string;
   bodyMarkdown: string;
 }
@@ -47,7 +55,7 @@ export interface AboutSectionEntry {
 
 export interface ContentStore {
   characters: Record<string, CharacterEntry>;
-  episodes: EpisodeEntry[];
+  episodes: EpisodeSummaryEntry[];
   world: WorldEntry[];
   about: AboutSectionEntry[];
 }

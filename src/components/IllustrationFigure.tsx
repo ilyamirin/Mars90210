@@ -1,7 +1,16 @@
-export function IllustrationFigure({ src, alt }: { src: string; alt: string }) {
+import type { IllustrationEntry } from '../content/types';
+import { MediaImage } from './MediaImage';
+
+export function IllustrationFigure({ image }: { image: IllustrationEntry }) {
   return (
     <figure className="illustration-figure">
-      <img src={src} alt={alt} />
+      <MediaImage
+        image={image}
+        className="illustration-figure-media"
+        loading="eager"
+        decoding="sync"
+        sizes="(min-width: 1200px) 28rem, 100vw"
+      />
     </figure>
   );
 }
