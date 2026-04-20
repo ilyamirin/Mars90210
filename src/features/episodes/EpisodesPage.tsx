@@ -37,7 +37,7 @@ export function EpisodesPage() {
       <SectionHeading
         eyebrow="Сезон 1"
         title="Эпизоды"
-        description="Этот сезон движется тихо и упрямо: от одной сцены к другой, от повседневной усталости к словам, которые уже нельзя не сказать."
+        description="Сезон начинается с мелких сбоев и недосказанности, а потом приводит к словам, после которых уже нельзя жить по-старому."
       />
       <div className="episodes-stack">
         {visibleEpisodes.map((episode) => (

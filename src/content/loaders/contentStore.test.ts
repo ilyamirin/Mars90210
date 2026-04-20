@@ -52,6 +52,7 @@ describe('buildContentStore', () => {
     expect(store.episodes[0].cardExcerpt.length).toBeGreaterThan(10);
     expect(store.episodes[0].cardExcerpt.length).toBeLessThan(store.episodes[0].excerpt.length);
     expect('bodyMarkdown' in store.episodes[0]).toBe(false);
+    expect(store.episodes[12].cardExcerpt).toContain('Марта замечает небольшую ошибку');
   });
 
   test('attaches optimized illustration path to episode entries when art exists', () => {
@@ -111,8 +112,10 @@ describe('buildContentStore', () => {
     const store = buildContentStore();
 
     expect(store.about.map((entry) => entry.slug)).toEqual(['project', 'ai-gen', 'creator']);
-    expect(store.about[0].bodyMarkdown).toContain('AI-native production');
-    expect(store.about[1].bodyMarkdown).toContain('fully AI-generated production');
+    expect(store.about[0].bodyMarkdown).toContain('AI здесь участвовал не только в изображениях');
+    expect(store.about[1].bodyMarkdown).toContain(
+      'почти полностью AI-собранное производство под человеческим руководством',
+    );
     expect(store.about[1].bodyMarkdown).toContain('$replicate-nano-banana-2-http');
     expect(store.about[0].image.alt).toContain('Тихий вечер');
   });

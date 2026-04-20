@@ -24,4 +24,7 @@ test('renders the first batch of episode cards and reveals more on demand', asyn
   await userEvent.click(screen.getByRole('button', { name: /Показать ещё/i }));
 
   expect(screen.getByRole('link', { name: /Читать Маленькая ошибка/i })).toBeInTheDocument();
+  expect(
+    screen.getByText('Марта замечает небольшую ошибку в заказе и впервые не исправляет её мгновенно.'),
+  ).toBeInTheDocument();
 });

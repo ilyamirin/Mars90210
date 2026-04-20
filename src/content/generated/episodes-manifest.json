@@ -102,7 +102,7 @@
     "timePoint": "8 октября 2089, утро и день",
     "keyScene": "Силан впервые приходит в ПВЗ как представитель `NovaCredit`",
     "excerpt": "Силан пришёл в ПВЗ в десять минут одиннадцатого — не рано и не поздно, а ровно в то время, которое человек с хорошим воспитанием выбирает, если не хочет казаться ни виноватым, ни слишком уверенным.",
-    "cardExcerpt": "Силан пришёл в ПВЗ в десять минут одиннадцатого — не рано и не поздно, а ровно в то время, которое человек с хорошим воспитанием выбирает, если не хочет казаться ни виноватым, ни…",
+    "cardExcerpt": "Силан впервые приходит в ПВЗ как представитель NovaCredit.",
     "illustration": {
       "src": "media/optimized/season-01/episode-006/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-006/illustration.png",
@@ -235,7 +235,7 @@
     "timePoint": "17 октября 2089, день",
     "keyScene": "Марта замечает небольшую ошибку в заказе и впервые не исправляет её мгновенно",
     "excerpt": "Ошибка была крошечной.",
-    "cardExcerpt": "Ошибка была крошечной.",
+    "cardExcerpt": "Марта замечает небольшую ошибку в заказе и впервые не исправляет её мгновенно.",
     "illustration": {
       "src": "media/optimized/season-01/episode-013/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-013/illustration.png",
@@ -311,7 +311,7 @@
     "timePoint": "23 октября 2089, поздний вечер",
     "keyScene": "Эйрон присылает Айгуль короткое письмо с предложением встретиться и сравнить данные",
     "excerpt": "Письмо пришло не тогда, когда его ждали.",
-    "cardExcerpt": "Письмо пришло не тогда, когда его ждали.",
+    "cardExcerpt": "Эйрон присылает Айгуль короткое письмо с предложением встретиться и сравнить данные.",
     "illustration": {
       "src": "media/optimized/season-01/episode-017/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-017/illustration.png",
@@ -330,7 +330,7 @@
     "timePoint": "24 октября 2089, конец смены",
     "keyScene": "коллега почти замечает Мартины стихи и задаёт невинный вопрос о ключике",
     "excerpt": "Иногда человеку достаточно одного невинного вопроса, чтобы внутренне почувствовать себя пойманным на месте преступления.",
-    "cardExcerpt": "Иногда человеку достаточно одного невинного вопроса, чтобы внутренне почувствовать себя пойманным на месте преступления.",
+    "cardExcerpt": "Коллега почти замечает Мартины стихи и задаёт невинный вопрос о ключике.",
     "illustration": {
       "src": "media/optimized/season-01/episode-018/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-018/illustration.png",
@@ -406,7 +406,7 @@
     "timePoint": "31 октября 2089, вечер",
     "keyScene": "Айгуль принимает решение пойти на встречу с Эйроном",
     "excerpt": "Решение иногда приходит не как слово, а как одевание.",
-    "cardExcerpt": "Решение иногда приходит не как слово, а как одевание.",
+    "cardExcerpt": "Айгуль принимает решение пойти на встречу с Эйроном.",
     "illustration": {
       "src": "media/optimized/season-01/episode-022/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-022/illustration.png",
@@ -444,7 +444,7 @@
     "timePoint": "3 ноября 2089, вечер",
     "keyScene": "срок земного предложения истекает, а Руслана всё ещё пытается принять решение как будто это чистая рациональность",
     "excerpt": "Слово `дедлайн` обычно действовало на Руслану как анестезия.",
-    "cardExcerpt": "Слово `дедлайн` обычно действовало на Руслану как анестезия.",
+    "cardExcerpt": "Срок земного предложения истекает, а Руслана всё ещё пытается принять решение как будто это чистая рациональность.",
     "illustration": {
       "src": "media/optimized/season-01/episode-024/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-024/illustration.png",
@@ -482,7 +482,7 @@
     "timePoint": "6 ноября 2089, поздний вечер",
     "keyScene": "Лира узнаёт, что Силан вовлечён в `Phase Zero` глубже, чем ей хотелось верить",
     "excerpt": "После официального объявления Лира надеялась хотя бы на одну вещь: что Силан окажется одним из тех приличных людей внутри плохой системы, которые знают не всё.",
-    "cardExcerpt": "После официального объявления Лира надеялась хотя бы на одну вещь: что Силан окажется одним из тех приличных людей внутри плохой системы, которые знают не всё.",
+    "cardExcerpt": "Лира узнаёт, что Силан вовлечён в Phase Zero глубже, чем ей хотелось верить.",
     "illustration": {
       "src": "media/optimized/season-01/episode-026/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-026/illustration.png",
@@ -501,7 +501,7 @@
     "timePoint": "8 ноября 2089, вечер",
     "keyScene": "встреча с Эйроном подтверждает, что подозрения Айгуль не были паранойей",
     "excerpt": "Во второй раз встречаться с человеком труднее, чем в первый.",
-    "cardExcerpt": "Во второй раз встречаться с человеком труднее, чем в первый.",
+    "cardExcerpt": "Встреча с Эйроном подтверждает, что подозрения Айгуль не были паранойей.",
     "illustration": {
       "src": "media/optimized/season-01/episode-027/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-027/illustration.png",
@@ -520,7 +520,7 @@
     "timePoint": "10 ноября 2089, вечер",
     "keyScene": "Марта признаётся Лире, что пишет стихи",
     "excerpt": "Признание начинается задолго до слов.",
-    "cardExcerpt": "Признание начинается задолго до слов.",
+    "cardExcerpt": "Марта признаётся Лире, что пишет стихи.",
     "illustration": {
       "src": "media/optimized/season-01/episode-028/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-028/illustration.png",
@@ -539,7 +539,7 @@
     "timePoint": "12 ноября 2089, ночь",
     "keyScene": "Руслана заполняет запрос на перевод, но так и не отправляет его",
     "excerpt": "Форма перевода оказалась оскорбительно короткой.",
-    "cardExcerpt": "Форма перевода оказалась оскорбительно короткой.",
+    "cardExcerpt": "Руслана заполняет запрос на перевод, но так и не отправляет его.",
     "illustration": {
       "src": "media/optimized/season-01/episode-029/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-029/illustration.png",
@@ -558,7 +558,7 @@
     "timePoint": "14 ноября 2089, поздний вечер",
     "keyScene": "команда скрывает одну критическую дыру в отчёте, чтобы выиграть время",
     "excerpt": "Дыра в отчёте выглядела почти невинно.",
-    "cardExcerpt": "Дыра в отчёте выглядела почти невинно.",
+    "cardExcerpt": "Команда скрывает одну критическую дыру в отчёте, чтобы выиграть время.",
     "illustration": {
       "src": "media/optimized/season-01/episode-030/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-030/illustration.png",
@@ -577,7 +577,7 @@
     "timePoint": "16 ноября 2089, день",
     "keyScene": "Владимир запускает официальную процедуру против Лиры как руководителя ПВЗ",
     "excerpt": "Письмо пришло в девять ноль две.",
-    "cardExcerpt": "Письмо пришло в девять ноль две.",
+    "cardExcerpt": "Владимир запускает официальную процедуру против Лиры как руководителя ПВЗ.",
     "illustration": {
       "src": "media/optimized/season-01/episode-031/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-031/illustration.png",
@@ -596,7 +596,7 @@
     "timePoint": "18 ноября 2089, вечер",
     "keyScene": "Данил приносит Айгуль флешку с данными, которые могут подтвердить фальсификации",
     "excerpt": "Когда прошлое приходит в руки, оно почти всегда выглядит смешно материально.",
-    "cardExcerpt": "Когда прошлое приходит в руки, оно почти всегда выглядит смешно материально.",
+    "cardExcerpt": "Данил приносит Айгуль флешку с данными, которые могут подтвердить фальсификации.",
     "illustration": {
       "src": "media/optimized/season-01/episode-032/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-032/illustration.png",
@@ -615,7 +615,7 @@
     "timePoint": "20 ноября 2089, ночь",
     "keyScene": "Марта запускает анонимную колонку о работе, усталости и женском молчании",
     "excerpt": "Название пришло не сразу.",
-    "cardExcerpt": "Название пришло не сразу.",
+    "cardExcerpt": "Марта запускает анонимную колонку о работе, усталости и женском молчании.",
     "illustration": {
       "src": "media/optimized/season-01/episode-033/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-033/illustration.png",
@@ -634,7 +634,7 @@
     "timePoint": "24 ноября 2089, утро",
     "keyScene": "Руслана окончательно отказывает Земле",
     "excerpt": "Слово `нет` оказалось короче всех её мучений.",
-    "cardExcerpt": "Слово `нет` оказалось короче всех её мучений.",
+    "cardExcerpt": "Руслана окончательно отказывает Земле.",
     "illustration": {
       "src": "media/optimized/season-01/episode-034/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-034/illustration.png",
@@ -653,7 +653,7 @@
     "timePoint": "25 ноября 2089, поздний вечер",
     "keyScene": "женщины впервые прямо договариваются бороться вместе",
     "excerpt": "Решение бороться редко выглядит красиво.",
-    "cardExcerpt": "Решение бороться редко выглядит красиво.",
+    "cardExcerpt": "Женщины впервые прямо договариваются бороться вместе.",
     "illustration": {
       "src": "media/optimized/season-01/episode-035/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-035/illustration.png",
@@ -672,7 +672,7 @@
     "timePoint": "27 ноября 2089, ночь",
     "keyScene": "Лира рискует допуском и карьерой, чтобы зайти в закрытый архив",
     "excerpt": "Закрытые архивы всегда выглядят скучно.",
-    "cardExcerpt": "Закрытые архивы всегда выглядят скучно.",
+    "cardExcerpt": "Лира рискует допуском и карьерой, чтобы зайти в закрытый архив.",
     "illustration": {
       "src": "media/optimized/season-01/episode-036/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-036/illustration.png",
@@ -691,7 +691,7 @@
     "timePoint": "29 ноября 2089, поздний вечер",
     "keyScene": "Айгуль проводит с Эйроном слишком честный вечер и пугается собственной вовлечённости",
     "excerpt": "Они собирались обсуждать только материалы из архива.",
-    "cardExcerpt": "Они собирались обсуждать только материалы из архива.",
+    "cardExcerpt": "Айгуль проводит с Эйроном слишком честный вечер и пугается собственной вовлечённости.",
     "illustration": {
       "src": "media/optimized/season-01/episode-037/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-037/illustration.png",
@@ -710,7 +710,7 @@
     "timePoint": "1 декабря 2089, вечер",
     "keyScene": "Марта впервые читает стихотворение вслух",
     "excerpt": "Читать вслух оказалось страшнее публикации.",
-    "cardExcerpt": "Читать вслух оказалось страшнее публикации.",
+    "cardExcerpt": "Марта впервые читает стихотворение вслух.",
     "illustration": {
       "src": "media/optimized/season-01/episode-038/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-038/illustration.png",
@@ -729,7 +729,7 @@
     "timePoint": "3 декабря 2089, день",
     "keyScene": "Руслана понимает, что мечта о семье не делает её слабее",
     "excerpt": "Осознание пришло не красиво.",
-    "cardExcerpt": "Осознание пришло не красиво.",
+    "cardExcerpt": "Руслана понимает, что мечта о семье не делает её слабее.",
     "illustration": {
       "src": "media/optimized/season-01/episode-039/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-039/illustration.png",
@@ -748,7 +748,7 @@
     "timePoint": "6 декабря 2089, вечер",
     "keyScene": "Владимир почти добивается распада команды",
     "excerpt": "Он бил не по общему месту.",
-    "cardExcerpt": "Он бил не по общему месту.",
+    "cardExcerpt": "Владимир почти добивается распада команды.",
     "illustration": {
       "src": "media/optimized/season-01/episode-040/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-040/illustration.png",
@@ -767,7 +767,7 @@
     "timePoint": "8 декабря 2089, день",
     "keyScene": "Лира формально теряет контроль над ПВЗ",
     "excerpt": "Ограничение полномочий пришло без театра.",
-    "cardExcerpt": "Ограничение полномочий пришло без театра.",
+    "cardExcerpt": "Лира формально теряет контроль над ПВЗ.",
     "illustration": {
       "src": "media/optimized/season-01/episode-041/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-041/illustration.png",
@@ -786,7 +786,7 @@
     "timePoint": "10 декабря 2089, вечер",
     "keyScene": "Айгуль получает помощь сразу от Данила и от Алины",
     "excerpt": "Иногда помощь приходит не оттуда, откуда хочется.",
-    "cardExcerpt": "Иногда помощь приходит не оттуда, откуда хочется.",
+    "cardExcerpt": "Айгуль получает помощь сразу от Данила и от Алины.",
     "illustration": {
       "src": "media/optimized/season-01/episode-042/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-042/illustration.png",
@@ -805,7 +805,7 @@
     "timePoint": "11 декабря 2089, вечер",
     "keyScene": "Марта впервые прямо просит о помощи",
     "excerpt": "Просить о помощи оказалось труднее, чем читать стихи.",
-    "cardExcerpt": "Просить о помощи оказалось труднее, чем читать стихи.",
+    "cardExcerpt": "Марта впервые прямо просит о помощи.",
     "illustration": {
       "src": "media/optimized/season-01/episode-043/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-043/illustration.png",
@@ -824,7 +824,7 @@
     "timePoint": "13 декабря 2089, вечер",
     "keyScene": "Руслана говорит подругам и родителям правду о том, что остаётся на Марсе",
     "excerpt": "Правда обычно выглядит беднее легенды.",
-    "cardExcerpt": "Правда обычно выглядит беднее легенды.",
+    "cardExcerpt": "Руслана говорит подругам и родителям правду о том, что остаётся на Марсе.",
     "illustration": {
       "src": "media/optimized/season-01/episode-044/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-044/illustration.png",
@@ -843,7 +843,7 @@
     "timePoint": "15 декабря 2089, день",
     "keyScene": "команда одновременно готовит сезонный маркет в ПВЗ и внутреннюю защиту",
     "excerpt": "Самое абсурдное в декабре было то, что жизнь продолжала требовать украшений.",
-    "cardExcerpt": "Самое абсурдное в декабре было то, что жизнь продолжала требовать украшений.",
+    "cardExcerpt": "Команда одновременно готовит сезонный маркет в ПВЗ и внутреннюю защиту.",
     "illustration": {
       "src": "media/optimized/season-01/episode-045/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-045/illustration.png",
@@ -862,7 +862,7 @@
     "timePoint": "16 декабря 2089, поздний вечер",
     "keyScene": "Лира получает ультиматум — уйти тихо или смотреть, как сокращают остальных",
     "excerpt": "Ультиматумы всегда предлагают как взрослый компромисс.",
-    "cardExcerpt": "Ультиматумы всегда предлагают как взрослый компромисс.",
+    "cardExcerpt": "Лира получает ультиматум — уйти тихо или смотреть, как сокращают остальных.",
     "illustration": {
       "src": "media/optimized/season-01/episode-046/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-046/illustration.png",
@@ -881,7 +881,7 @@
     "timePoint": "18 декабря 2089, ночь",
     "keyScene": "Айгуль доверяет Эйрону часть данных",
     "excerpt": "Доверие редко ощущается как красивый жест.",
-    "cardExcerpt": "Доверие редко ощущается как красивый жест.",
+    "cardExcerpt": "Айгуль доверяет Эйрону часть данных.",
     "illustration": {
       "src": "media/optimized/season-01/episode-047/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-047/illustration.png",
@@ -919,7 +919,7 @@
     "timePoint": "20 декабря 2089, утро",
     "keyScene": "Руслана окончательно выбирает свою жизнь в `Новой Заре`",
     "excerpt": "Иногда выбор нужно повторить, даже если формально он уже сделан.",
-    "cardExcerpt": "Иногда выбор нужно повторить, даже если формально он уже сделан.",
+    "cardExcerpt": "Руслана окончательно выбирает свою жизнь в Новой Заре.",
     "illustration": {
       "src": "media/optimized/season-01/episode-049/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-049/illustration.png",
@@ -938,7 +938,7 @@
     "timePoint": "22 декабря 2089, день",
     "keyScene": "Владимир разоблачён, но сам проект оптимизации не остановлен",
     "excerpt": "Разоблачение не было красивым.",
-    "cardExcerpt": "Разоблачение не было красивым.",
+    "cardExcerpt": "Владимир разоблачён, но сам проект оптимизации не остановлен.",
     "illustration": {
       "src": "media/optimized/season-01/episode-050/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-050/illustration.png",
@@ -976,7 +976,7 @@
     "timePoint": "24 декабря 2089, ночь",
     "keyScene": "Айгуль прощает себя за всё, что считала своей виной в истории с Данилом",
     "excerpt": "Прощать себя оказалось не светлым процессом.",
-    "cardExcerpt": "Прощать себя оказалось не светлым процессом.",
+    "cardExcerpt": "Айгуль прощает себя за всё, что считала своей виной в истории с Данилом.",
     "illustration": {
       "src": "media/optimized/season-01/episode-052/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-052/illustration.png",
@@ -995,7 +995,7 @@
     "timePoint": "26 декабря 2089, вечер",
     "keyScene": "Марта впервые публикует текст под своим именем",
     "excerpt": "Псевдоним защищал.",
-    "cardExcerpt": "Псевдоним защищал.",
+    "cardExcerpt": "Марта впервые публикует текст под своим именем.",
     "illustration": {
       "src": "media/optimized/season-01/episode-053/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-053/illustration.png",
@@ -1014,7 +1014,7 @@
     "timePoint": "27 декабря 2089, день",
     "keyScene": "Руслана выступает на городской встрече и говорит своим голосом",
     "excerpt": "Раньше Руслана умела говорить идеально.",
-    "cardExcerpt": "Раньше Руслана умела говорить идеально.",
+    "cardExcerpt": "Руслана выступает на городской встрече и говорит своим голосом.",
     "illustration": {
       "src": "media/optimized/season-01/episode-054/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-054/illustration.png",
@@ -1033,7 +1033,7 @@
     "timePoint": "28 декабря 2089, день",
     "keyScene": "команда нарушает регламент, чтобы ПВЗ не закрылся в критический день",
     "excerpt": "Закрыть ПВЗ на техническое окно предлагалось аккуратно и вовремя.",
-    "cardExcerpt": "Закрыть ПВЗ на техническое окно предлагалось аккуратно и вовремя.",
+    "cardExcerpt": "Команда нарушает регламент, чтобы ПВЗ не закрылся в критический день.",
     "illustration": {
       "src": "media/optimized/season-01/episode-055/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-055/illustration.png",
@@ -1052,7 +1052,7 @@
     "timePoint": "29 декабря 2089, вечер",
     "keyScene": "Лира публично признаёт, что её сила много лет держалась на страхе",
     "excerpt": "Признание получилось не запланированным.",
-    "cardExcerpt": "Признание получилось не запланированным.",
+    "cardExcerpt": "Лира публично признаёт, что её сила много лет держалась на страхе.",
     "illustration": {
       "src": "media/optimized/season-01/episode-056/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-056/illustration.png",
@@ -1071,7 +1071,7 @@
     "timePoint": "29 декабря 2089, поздняя ночь",
     "keyScene": "Айгуль перестаёт прятаться за одной только иронией",
     "excerpt": "Ирония много лет была для Айгуль самым красивым видом дисциплины.",
-    "cardExcerpt": "Ирония много лет была для Айгуль самым красивым видом дисциплины.",
+    "cardExcerpt": "Айгуль перестаёт прятаться за одной только иронией.",
     "illustration": {
       "src": "media/optimized/season-01/episode-057/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-057/illustration.png",
@@ -1090,7 +1090,7 @@
     "timePoint": "30 декабря 2089, день",
     "keyScene": "Марта впервые улыбается не из сервиса, а из внутренней свободы",
     "excerpt": "Это произошло в очереди.",
-    "cardExcerpt": "Это произошло в очереди.",
+    "cardExcerpt": "Марта впервые улыбается не из сервиса, а из внутренней свободы.",
     "illustration": {
       "src": "media/optimized/season-01/episode-058/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-058/illustration.png",
@@ -1109,7 +1109,7 @@
     "timePoint": "30 декабря 2089, вечер",
     "keyScene": "Руслана дарит подругам маленькие игрушки как знак того, что будущему можно смотреть в лицо",
     "excerpt": "Подарки были смешными.",
-    "cardExcerpt": "Подарки были смешными.",
+    "cardExcerpt": "Руслана дарит подругам маленькие игрушки как знак того, что будущему можно смотреть в лицо.",
     "illustration": {
       "src": "media/optimized/season-01/episode-059/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-059/illustration.png",
@@ -1147,7 +1147,7 @@
     "timePoint": "31 декабря 2089, вечер",
     "keyScene": "Лира понимает, что Марс больше не изгнание, а дом",
     "excerpt": "Лира долго называла Марс местом, где надо выдержать.",
-    "cardExcerpt": "Лира долго называла Марс местом, где надо выдержать.",
+    "cardExcerpt": "Лира понимает, что Марс больше не изгнание, а дом.",
     "illustration": {
       "src": "media/optimized/season-01/episode-061/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-061/illustration.png",
@@ -1166,7 +1166,7 @@
     "timePoint": "31 декабря 2089, поздний вечер",
     "keyScene": "Айгуль разрешает себе слабость и назначает Эйрону кофе",
     "excerpt": "Сообщение она писала дольше, чем любой служебный отчёт этого месяца.",
-    "cardExcerpt": "Сообщение она писала дольше, чем любой служебный отчёт этого месяца.",
+    "cardExcerpt": "Айгуль разрешает себе слабость и назначает Эйрону кофе.",
     "illustration": {
       "src": "media/optimized/season-01/episode-062/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-062/illustration.png",
@@ -1185,7 +1185,7 @@
     "timePoint": "31 декабря 2089, полночь",
     "keyScene": "под искусственным снегом команда встречает Новый год уже не как функция, а как живые люди",
     "excerpt": "Снег под куполом всегда казался немного нелепым.",
-    "cardExcerpt": "Снег под куполом всегда казался немного нелепым.",
+    "cardExcerpt": "Под искусственным снегом команда встречает Новый год уже не как функция, а как живые люди.",
     "illustration": {
       "src": "media/optimized/season-01/episode-063/illustration.png",
       "pngSrc": "media/optimized/season-01/episode-063/illustration.png",

@@ -68,8 +68,25 @@ function truncateAtWord(text, limit) {
   return `${(boundary > 0 ? sliced.slice(0, boundary) : sliced).trim()}…`;
 }
 
-function buildCardExcerpt(text) {
-  const normalized = text.replace(/\s+/g, ' ').trim();
+function normalizeCardText(text) {
+  return text.replace(/`([^`]+)`/g, '$1').replace(/\s+/g, ' ').trim();
+}
+
+function toSentence(text) {
+  const normalized = normalizeCardText(text);
+
+  if (!normalized) {
+    return '';
+  }
+
+  const firstChar = normalized[0];
+  const sentence = /[.!?…]$/.test(normalized) ? normalized : `${normalized}.`;
+
+  return `${firstChar.toUpperCase()}${sentence.slice(1)}`;
+}
+
+function packParagraphExcerpt(text) {
+  const normalized = normalizeCardText(text);
 
   if (!normalized) {
     return '';
@@ -93,6 +110,36 @@ function buildCardExcerpt(text) {
   }
 
   return truncateAtWord(cardExcerpt, 180);
+}
+
+function isAbstractCardExcerpt(text) {
+  return /^(Иногда|Решение|Правда|Доверие|Осознание|Название|Псевдоним|Это произошло|Подарки|Снег|Ирония|Признание|Ультиматумы|Разоблачение|Прощать себя|Во второй раз|Слово |После официального объявления|Форма перевода|Дыра в отчёте|Письмо пришло|Когда прошлое приходит|Решение бороться|Закрытые архивы|Они собирались|Читать вслух|Он бил|Ограничение полномочий|Просить о помощи|Самое абсурдное|Раньше Руслана|Закрыть ПВЗ|Лира долго называла|Сообщение она писала)/.test(
+    text,
+  );
+}
+
+function buildCardExcerpt(paragraph, keyScene, explicitCard) {
+  const explicit = toSentence(explicitCard);
+
+  if (explicit) {
+    return truncateAtWord(explicit, 160);
+  }
+
+  const packedParagraph = packParagraphExcerpt(paragraph);
+  const sceneSentence = toSentence(keyScene);
+
+  if (!packedParagraph) {
+    return truncateAtWord(sceneSentence, 160);
+  }
+
+  if (
+    sceneSentence &&
+    (packedParagraph.includes('…') || packedParagraph.length < 24 || isAbstractCardExcerpt(packedParagraph))
+  ) {
+    return truncateAtWord(sceneSentence, 160);
+  }
+
+  return packedParagraph;
 }
 
 function optimizedPngPath(slug) {
@@ -151,7 +198,11 @@ const episodes = readdirSync(episodesRoot)
       timePoint: extractMetadataValue(markdown, 'Временная точка'),
       keyScene: extractMetadataValue(markdown, 'Ключевая сцена'),
       excerpt: firstParagraph(bodyMarkdown),
-      cardExcerpt: buildCardExcerpt(firstParagraph(bodyMarkdown)),
+      cardExcerpt: buildCardExcerpt(
+        firstParagraph(bodyMarkdown),
+        extractMetadataValue(markdown, 'Ключевая сцена'),
+        extractMetadataValue(markdown, 'Карточка'),
+      ),
       illustration: hasIllustration
         ? {
             src: optimizedPngPath(slug),
