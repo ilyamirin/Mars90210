@@ -27,6 +27,7 @@ import {
   optimizedEpisodeAvifAssets,
   optimizedPortraitAvifAssets,
   optimizedPortraitPngAssets,
+  optimizedWorldAvifAssets,
   worldMarkdown,
 } from './rawImports';
 
@@ -77,6 +78,12 @@ function episodeAvifAssetReady(relativePath: string) {
   return avifKey in optimizedEpisodeAvifAssets;
 }
 
+function worldAvifAssetReady(relativePath: string) {
+  const avifKey = `/public/media/optimized/${relativePath.replace(/\.png$/i, '.avif')}`;
+
+  return avifKey in optimizedWorldAvifAssets;
+}
+
 function priorityRank(priority: WorldEntry['priority']) {
   return { high: 0, medium: 1, low: 2 }[priority];
 }
@@ -103,14 +110,28 @@ function worldImageMap(slug: string) {
       'season-01/episode-001/illustration.png',
       'season-01/episode-002/illustration.png',
     ],
+    'season-01-outline': [
+      'world/season-01-outline/illustration.png',
+      'season-01/episode-063/illustration.png',
+    ],
+    relationships: [
+      'world/relationships/illustration.png',
+      'season-01/episode-035/illustration.png',
+    ],
   };
 
-  return (bySlug[slug] ?? ['season-01/episode-001/illustration.png']).map((relativePath) => ({
-    src: optimizedPngPath(relativePath),
-    pngSrc: optimizedPngPath(relativePath),
-    avifSrc: episodeAvifAssetReady(relativePath) ? optimizedWebpPath(relativePath) : '',
-    alt: 'Иллюстрация мира Mars90210',
-  }));
+  return (bySlug[slug] ?? ['season-01/episode-001/illustration.png']).map((relativePath) => {
+    const avifReady = relativePath.startsWith('world/')
+      ? worldAvifAssetReady(relativePath)
+      : episodeAvifAssetReady(relativePath);
+
+    return {
+      src: optimizedPngPath(relativePath),
+      pngSrc: optimizedPngPath(relativePath),
+      avifSrc: avifReady ? optimizedWebpPath(relativePath) : '',
+      alt: 'Иллюстрация мира Mars90210',
+    };
+  });
 }
 
 function aboutIllustrationPath(slug: string) {
@@ -247,7 +268,7 @@ function buildAbout(): AboutSectionEntry[] {
         slug,
         title: stripSeriesPrefix(extractTopHeading(markdown)),
         eyebrow,
-        bodyMarkdown: excerptParagraphs(stripLeadSections(markdown), 4),
+        bodyMarkdown: excerptParagraphs(stripLeadSections(markdown), 6),
         visualKey: visualKeyForSlug(slug),
         image:
           extractMetadataValue(markdown, 'Изображение') === 'ready' && aboutAssetReady(slug)

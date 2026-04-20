@@ -11,7 +11,7 @@ export function WorldPage() {
       <SectionHeading
         eyebrow="Сеттинг"
         title="Мир под куполом"
-        description="Меньше справки, больше образов: несколько узлов мира, в которых всё уже чувствуется."
+        description="Здесь собраны главные места, силы и предметы этого мира — всё то, через что особенно ясно чувствуется жизнь под куполом."
       />
       <div className="world-groups">
         {worldGroups.map((group) => (

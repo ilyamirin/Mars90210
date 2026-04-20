@@ -92,12 +92,28 @@ describe('buildContentStore', () => {
     expect(['high', 'medium', 'low']).toContain(worldEntry.priority);
   });
 
+  test('attaches dedicated second images to season outline and relationships cards', () => {
+    const store = buildContentStore();
+    const seasonOutline = store.world.find((entry) => entry.slug === 'season-01-outline');
+    const relationships = store.world.find((entry) => entry.slug === 'relationships');
+
+    expect(seasonOutline?.relatedImages).toHaveLength(2);
+    expect(seasonOutline?.relatedImages[0].pngSrc).toContain(
+      'media/optimized/world/season-01-outline/illustration.png',
+    );
+    expect(relationships?.relatedImages).toHaveLength(2);
+    expect(relationships?.relatedImages[0].pngSrc).toContain(
+      'media/optimized/world/relationships/illustration.png',
+    );
+  });
+
   test('returns about sections from site content in editorial order', () => {
     const store = buildContentStore();
 
     expect(store.about.map((entry) => entry.slug)).toEqual(['project', 'ai-gen', 'creator']);
-    expect(store.about[0].bodyMarkdown).toContain('мягкая марсианская драмеди');
-    expect(store.about[1].bodyMarkdown).toContain('AI');
+    expect(store.about[0].bodyMarkdown).toContain('AI-native production');
+    expect(store.about[1].bodyMarkdown).toContain('fully AI-generated production');
+    expect(store.about[1].bodyMarkdown).toContain('$replicate-nano-banana-2-http');
     expect(store.about[0].image.alt).toContain('Тихий вечер');
   });
 });

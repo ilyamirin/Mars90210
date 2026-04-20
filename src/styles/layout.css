@@ -65,6 +65,35 @@
   font-size: 0.95rem;
 }
 
+.site-footer-panel {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 246, 240, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.site-footer-primary,
+.site-footer-secondary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1rem;
+  align-items: center;
+}
+
+.site-footer-primary p,
+.site-footer-secondary p {
+  margin: 0;
+}
+
+.site-footer-secondary {
+  padding-top: var(--space-2);
+  border-top: 1px solid rgba(139, 59, 49, 0.14);
+  font-size: 0.88rem;
+}
+
 .home-page,
 .content-page,
 .episode-reader,
@@ -80,6 +109,7 @@
   align-content: end;
   gap: var(--space-5);
   padding: var(--space-10) 0 var(--space-6);
+  overflow: clip;
 }
 
 .hero::after,
@@ -167,7 +197,7 @@
 
 .heroine-band {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: var(--space-3);
 }
 
@@ -364,7 +394,7 @@
 }
 
 .character-roster {
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: 1fr;
 }
 
 .character-card {
@@ -429,6 +459,13 @@
   align-content: start;
 }
 
+.about-visual-media {
+  width: 100%;
+  border-radius: calc(var(--radius-lg) - 10px);
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+}
+
 .section-glyph {
   min-height: 10rem;
   border-radius: calc(var(--radius-lg) - 10px);
@@ -474,6 +511,7 @@
 .episode-reader-shell {
   display: grid;
   gap: var(--space-5);
+  min-width: 0;
 }
 
 .episode-reader-rail-column,
@@ -481,6 +519,7 @@
   display: grid;
   gap: var(--space-4);
   align-content: start;
+  min-width: 0;
 }
 
 .episode-rail {
@@ -525,6 +564,8 @@
 }
 
 .episode-jump select {
+  width: 100%;
+  max-width: 100%;
   min-height: 2.9rem;
   padding: 0.75rem 0.9rem;
   border: 1px solid var(--line-soft);
@@ -535,10 +576,23 @@
 }
 
 .episode-nav {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: var(--space-3);
-  justify-content: space-between;
+  align-items: stretch;
+}
+
+.episode-nav > * {
+  min-width: 0;
+}
+
+.episode-nav a,
+.episode-nav span {
+  width: 100%;
+}
+
+.episode-nav span {
+  display: block;
 }
 
 .episodes-stack .episode-card {
@@ -557,6 +611,31 @@
   -webkit-line-clamp: 4;
 }
 
+.episode-reader .secondary-link,
+.episode-reader .episode-nav a,
+.episode-reader .episode-jump,
+.episode-reader .episode-header,
+.episode-reader .episode-rail-panel,
+.episode-reader .illustration-figure,
+.episode-reader .illustration-figure-media,
+.episode-reader .markdown-prose,
+.episode-reader .markdown-prose p,
+.episode-reader .markdown-prose li,
+.episode-reader .markdown-prose ul,
+.episode-reader h1,
+.episode-reader p {
+  min-width: 0;
+  max-width: 100%;
+}
+
+.episode-reader .markdown-prose p,
+.episode-reader .markdown-prose li,
+.episode-reader .episode-header p,
+.episode-reader .episode-header h1 {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
 @media (min-width: 720px) {
   .site-header {
     grid-template-columns: 1fr auto;
@@ -571,7 +650,8 @@
 
   .heroine-band,
   .episode-mosaic,
-  .world-preview-grid {
+  .world-preview-grid,
+  .character-roster {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -590,6 +670,17 @@
   .episodes-stack {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .episode-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .episode-nav a,
+  .episode-nav span {
+    width: auto;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -600,6 +691,10 @@
   }
 
   .episodes-stack {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .character-roster {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 

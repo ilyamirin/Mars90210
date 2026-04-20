@@ -21,7 +21,7 @@ export function CharactersPage() {
         <SectionHeading
           eyebrow="Персонажи"
           title="Четыре героини"
-          description="Лира, Айгуль, Марта и Руслана остаются центром сезона: через них слышен и быт под куполом, и цена надёжности."
+          description="Лира, Айгуль, Марта и Руслана — четыре разные женщины, через которых особенно ясно слышно, как здесь живут, работают, устают и держатся друг за друга."
         />
         <HeroineBand characters={mainCharacters} />
       </section>
@@ -30,7 +30,7 @@ export function CharactersPage() {
         <SectionHeading
           eyebrow="Второй круг"
           title="Важные люди сезона"
-          description="Не фон и не приложение к героиням, а фигуры, которые меняют направление сезона и цену решений."
+          description="Рядом с ними сезон становится острее: старые роли трещат, близость перестаёт быть безопасной, а каждое решение начинает что-то стоить."
         />
         <CharacterRoster characters={secondaryCharacters} />
       </section>

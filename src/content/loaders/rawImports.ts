@@ -50,3 +50,10 @@ export const optimizedEpisodeAvifAssets = import.meta.glob(
     eager: false,
   },
 );
+
+export const optimizedWorldAvifAssets = import.meta.glob(
+  '/public/media/optimized/world/*/illustration.avif',
+  {
+    eager: false,
+  },
+);
