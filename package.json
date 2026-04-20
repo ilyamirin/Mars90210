@@ -8,6 +8,7 @@
     "dev": "vite",
     "prebuild": "pnpm content:prepare",
     "build": "tsc --noEmit && vite build",
+    "postbuild": "node scripts/prepare-github-pages.mjs",
     "preview": "vite preview",
     "content:prepare": "pnpm media:optimize && pnpm content:generate",
     "content:generate": "node scripts/generate-episodes-manifest.mjs",
