@@ -1,31 +1,36 @@
-# Mars90210 — Episode 011 Illustration
+    # Mars90210 — Episode 011 Illustration
 
-## Метаданные
-- Episode: 011
-- Заголовок эпизода: Чай, который нельзя назвать свиданием
-- Файл вывода: `illustration.png`
-- Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-011`
+    ## Метаданные
+    - Episode: 011
+    - Заголовок эпизода: Чай, который нельзя назвать свиданием
+    - Prediction ID: `c3mtfmfy9nrmt0cxn7w9w6yjzg`
+    - Файл вывода: `illustration.png`
+    - Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-011`
 
-## Изображаемый момент
-Лира сидит у Силана в офисе `NovaCredit`, держа чашку чая; между ними редкая тишина, в которой уже есть взаимное узнавание и профессиональная опасность.
+    ## Изображаемый момент
+    Лира принимает приглашение Силана на чай после тяжёлого дня.
 
-## Кадр
-- вертикальный кадр `3:4`
-- Лира в куртке с чашкой в руках
-- Силан напротив, с чуть сбившимся галстуком
-- стерильный офис, но на столе чай и книга стихов
-- не романтическая открытка, а взрослый тихий момент
+    ## Кадр
+    - вертикальный кадр `3:4`
+    - один читаемый драматический момент, а не постер сезона
+    - фокус на герое или узле отношений, который ведёт сцену
+    - обязательно читается марсианская среда и бытовая реальность мира
+    - human drama first, tech second
 
-## Предметы и continuity
-- куртка Лиры обязательна
-- у Силана книга стихов и костюм
-- офис должен быть холодным, а сцена — тёплой по человеческой температуре
+    ## Предметы и continuity
+    - Лира: синяя джинсовая куртка, мягкая собранность, тёплый взгляд
+- Силан: строгий костюм, чуть перекошенный галстук, усталый умный взгляд
 
-## Стиль
-- sci-fi comics 70s
-- intimate adult tension
-- elegant inked linework
-- halftone shading
+    ## Персонажи и опознаваемые детали
+    - Лира: синяя джинсовая куртка, мягкая собранность, тёплый взгляд
+- Силан: строгий костюм, чуть перекошенный галстук, усталый умный взгляд
 
-## Prompt
-`1970s sci-fi comic illustration, vertical 3:4, intimate adult tension in a cold corporate office on Mars, a tired woman in a worn blue denim jacket holds a cup of tea while sitting across from a tall man in a suit with a slightly crooked tie, a poetry book visible on the desk, sterile bank office softened by rare human warmth, not a date scene, not glamorous, emotional realism, elegant ink lines, halftone shading, rust orange and white-gray palette, human drama first`
+    ## Стиль
+    - sci-fi comics 70s
+    - elegant inked linework
+    - halftone shading
+    - readable silhouettes
+    - emotional realism over spectacle
+
+    ## Prompt
+    `1970s sci-fi comic illustration, vertical 3:4, intimate dramatic scene from Mars90210, Лира принимает приглашение Силана на чай после тяжёлого дня. Time: 15 октября 2089, вечер. Location: Orbita pickup point on Mars. Story atmosphere: Ошибкой, возможно, было то, как сильно ей захотелось вернуться в тот кабинет ещё до того, как она успела закрыть за собой дверь.. Characters in frame: Lira, warm brown eyes, chestnut hair, worn blue denim jacket, tired but composed manager; Silan, tall thin risk analyst in a strict suit with a slightly crooked tie, tired intelligent eyes. Retro-futurist Mars colony, elegant inked linework, halftone shading, readable silhouettes, human drama first, tech second, emotional realism, not a poster, not pin-up art, no readable text, no labels, no signage`

@@ -103,6 +103,10 @@ function optimizedAvifPath(slug) {
   return `media/optimized/season-01/${slug}/illustration.avif`;
 }
 
+function optimizedAvifExists(slug) {
+  return existsSync(path.join(rootDir, 'public', optimizedAvifPath(slug)));
+}
+
 function sourceIllustrationPath(slug) {
   return path.join(rootDir, 'art', 'season-01', slug, 'illustration.png');
 }
@@ -152,7 +156,7 @@ const episodes = readdirSync(episodesRoot)
         ? {
             src: optimizedPngPath(slug),
             pngSrc: optimizedPngPath(slug),
-            avifSrc: optimizedAvifPath(slug),
+            avifSrc: optimizedAvifExists(slug) ? optimizedAvifPath(slug) : '',
             width: dimensions.width,
             height: dimensions.height,
             isPlaceholder: false,

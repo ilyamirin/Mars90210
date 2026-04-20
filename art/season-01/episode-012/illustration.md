@@ -3,29 +3,32 @@
 ## Метаданные
 - Episode: 012
 - Заголовок эпизода: Дневник на дне ящика
+- Prediction ID: `qwg1p7kfpdrmy0cxn7wsrbngj0`
 - Файл вывода: `illustration.png`
 - Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-012`
 
 ## Изображаемый момент
-Айгуль сидит на полу у выдвинутого ящика в своей квартире, держа старый бумажный блокнот с записью о желании быть обнятой.
+Айгуль находит старый бумажный дневник и перечитывает запись о желании быть обнятой.
 
 ## Кадр
 - вертикальный кадр `3:4`
-- Айгуль на полу, тёмные волосы, домашняя уязвимость без шарфа или с шарфом рядом
-- открытый нижний ящик, старый бумажный блокнот
-- строгая квартира, минимум вещей
-- настроение: холодная ясность и непрошенная нежность к своей прошлой версии
+- один читаемый драматический момент, а не постер сезона
+- фокус на герое или узле отношений, который ведёт сцену
+- обязательно читается марсианская среда и бытовая реальность мира
+- human drama first, tech second
 
 ## Предметы и continuity
-- блокнот обязателен
-- квартира функциональная, почти аскетичная
-- важно показать не романтическую слабость, а серьёзное внутреннее узнавание
+- Айгуль: высокий рост, тёмные волосы, яркий шарф, резкая ясность
+
+## Персонажи и опознаваемые детали
+- Айгуль: высокий рост, тёмные волосы, яркий шарф, резкая ясность
 
 ## Стиль
 - sci-fi comics 70s
-- intimate self-confrontation
 - elegant inked linework
 - halftone shading
+- readable silhouettes
+- emotional realism over spectacle
 
 ## Prompt
-`1970s sci-fi comic illustration, vertical 3:4, intimate self-confrontation in a minimalist Mars colony apartment, a tall dark-haired woman sits on the floor by an open lower drawer, holding an old paper notebook with a painful line from her past, deep internal recognition, olive skin, strong features, strict room with very few objects, scarf nearby or set aside, emotional realism, elegant ink lines, halftone shading, cool gray with rust accents, human drama first`
+`1970s sci-fi comic illustration, vertical 3:4, intimate dramatic scene from Mars90210, Айгуль находит старый бумажный дневник и перечитывает запись о желании быть обнятой. Time: 16 октября 2089, поздний вечер. Location: Orbita pickup point on Mars. Story atmosphere: И всё-таки дверь.. Characters in frame: Aigul, tall dark-haired woman with a deep red scarf, precise posture, guarded intelligence. Retro-futurist Mars colony, elegant inked linework, halftone shading, readable silhouettes, human drama first, tech second, emotional realism, not a poster, not pin-up art, no readable text, no labels, no signage`

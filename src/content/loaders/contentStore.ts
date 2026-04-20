@@ -22,6 +22,9 @@ import {
 import {
   aboutMarkdown,
   characterMarkdown,
+  optimizedAboutAvifAssets,
+  optimizedAboutPngAssets,
+  optimizedEpisodeAvifAssets,
   optimizedPortraitAvifAssets,
   optimizedPortraitPngAssets,
   worldMarkdown,
@@ -58,9 +61,20 @@ function portraitPath(slug: string) {
 
 function portraitAssetReady(slug: string) {
   const pngKey = `/public/media/optimized/portraits/heroines/${slug}/portrait.png`;
+
+  return pngKey in optimizedPortraitPngAssets;
+}
+
+function portraitAvifAssetReady(slug: string) {
   const avifKey = `/public/media/optimized/portraits/heroines/${slug}/portrait.avif`;
 
-  return pngKey in optimizedPortraitPngAssets && avifKey in optimizedPortraitAvifAssets;
+  return avifKey in optimizedPortraitAvifAssets;
+}
+
+function episodeAvifAssetReady(relativePath: string) {
+  const avifKey = `/public/media/optimized/${relativePath.replace(/\.png$/i, '.avif')}`;
+
+  return avifKey in optimizedEpisodeAvifAssets;
 }
 
 function priorityRank(priority: WorldEntry['priority']) {
@@ -94,9 +108,25 @@ function worldImageMap(slug: string) {
   return (bySlug[slug] ?? ['season-01/episode-001/illustration.png']).map((relativePath) => ({
     src: optimizedPngPath(relativePath),
     pngSrc: optimizedPngPath(relativePath),
-    avifSrc: optimizedWebpPath(relativePath),
+    avifSrc: episodeAvifAssetReady(relativePath) ? optimizedWebpPath(relativePath) : '',
     alt: 'Иллюстрация мира Mars90210',
   }));
+}
+
+function aboutIllustrationPath(slug: string) {
+  return `site/about/${slug}/illustration.png`;
+}
+
+function aboutAssetReady(slug: string) {
+  const pngKey = `/public/media/optimized/site/about/${slug}/illustration.png`;
+
+  return pngKey in optimizedAboutPngAssets;
+}
+
+function aboutAvifAssetReady(slug: string) {
+  const avifKey = `/public/media/optimized/site/about/${slug}/illustration.avif`;
+
+  return avifKey in optimizedAboutAvifAssets;
 }
 
 function buildCharacters(): Record<string, CharacterEntry> {
@@ -141,7 +171,7 @@ function buildCharacters(): Record<string, CharacterEntry> {
             ? {
                 src: optimizedPngPath(portraitPath(slug)),
                 pngSrc: optimizedPngPath(portraitPath(slug)),
-                avifSrc: optimizedWebpPath(portraitPath(slug)),
+                avifSrc: portraitAvifAssetReady(slug) ? optimizedWebpPath(portraitPath(slug)) : '',
                 alt: toAltFromName(name),
               }
             : {
@@ -196,9 +226,11 @@ function visualKeyForSlug(slug: string): AboutSectionEntry['visualKey'] {
   if (slug === 'project') {
     return 'project';
   }
+
   if (slug === 'ai-gen') {
     return 'ai-gen';
   }
+
   return 'creator';
 }
 
@@ -217,6 +249,28 @@ function buildAbout(): AboutSectionEntry[] {
         eyebrow,
         bodyMarkdown: excerptParagraphs(stripLeadSections(markdown), 4),
         visualKey: visualKeyForSlug(slug),
+        image:
+          extractMetadataValue(markdown, 'Изображение') === 'ready' && aboutAssetReady(slug)
+            ? {
+                src: optimizedPngPath(aboutIllustrationPath(slug)),
+                pngSrc: optimizedPngPath(aboutIllustrationPath(slug)),
+                avifSrc: aboutAvifAssetReady(slug)
+                  ? optimizedWebpPath(aboutIllustrationPath(slug))
+                  : '',
+                alt:
+                  extractMetadataValue(markdown, 'Alt') ||
+                  `Иллюстрация для раздела ${stripSeriesPrefix(extractTopHeading(markdown))}`,
+              }
+            : {
+                src: '',
+                pngSrc: '',
+                avifSrc: '',
+                isPlaceholder: true,
+                alt:
+                  extractMetadataValue(markdown, 'Alt') ||
+                  `Иллюстрация для раздела ${stripSeriesPrefix(extractTopHeading(markdown))}`,
+                placeholderText: 'Иллюстрация появится позже',
+              },
       };
     })
     .sort((left, right) => order.indexOf(left.slug) - order.indexOf(right.slug));

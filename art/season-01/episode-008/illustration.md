@@ -3,30 +3,32 @@
 ## Метаданные
 - Episode: 008
 - Заголовок эпизода: Плохое стихотворение
+- Prediction ID: `wq3hyqctxnrmt0cxn7vsxw6b4w`
 - Файл вывода: `illustration.png`
 - Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-008`
 
 ## Изображаемый момент
-Ночная квартира Марты: она сидит у лампы с раскрытой тетрадью, а ключик лежит в её пальцах. Это момент, когда злой текст уже написан, но ещё не спрятан.
+Марта пишет ночью не печальный, а злой текст и впервые не стыдится этого сразу.
 
 ## Кадр
 - вертикальный кадр `3:4`
-- Марта за столом ночью, усталая, светлые волосы, мягкое лицо
-- тёплый свет настольной лампы
-- раскрытая тетрадь с рукописным текстом
-- маленький ключик в руке или рядом на столе
-- атмосфера не депрессии, а тихого внутреннего прорыва
+- один читаемый драматический момент, а не постер сезона
+- фокус на герое или узле отношений, который ведёт сцену
+- обязательно читается марсианская среда и бытовая реальность мира
+- human drama first, tech second
 
 ## Предметы и continuity
-- ключик обязателен
-- квартира Марты должна быть мягкой, тесной, немного грустной
-- Марта не гламурная и не юная
+- Марта: светлые волосы, мягкая телесность, ключик на шее, ранимая внимательность
+
+## Персонажи и опознаваемые детали
+- Марта: светлые волосы, мягкая телесность, ключик на шее, ранимая внимательность
 
 ## Стиль
 - sci-fi comics 70s
-- intimate nocturnal scene
 - elegant inked linework
 - halftone shading
+- readable silhouettes
+- emotional realism over spectacle
 
 ## Prompt
-`1970s sci-fi comic illustration, vertical 3:4, intimate nocturnal scene in a small Mars colony apartment, a tired blonde woman with soft features sits at a desk under a warm lamp, a handwritten notebook open before her, a tiny silver key in her hand or on the desk, she has just written something angry and true, quiet breakthrough, not melodrama, soft fabrics, cramped room, emotional realism, elegant ink lines, halftone shading, warm lamp glow against cool night tones, human drama first`
+`1970s sci-fi comic illustration, vertical 3:4, intimate dramatic scene from Mars90210, Марта пишет ночью не печальный, а злой текст и впервые не стыдится этого сразу. Time: 10 октября 2089, поздний вечер и ночь. Location: Orbita pickup point on Mars. Story atmosphere: И, может быть, именно с этого начинаются самые важные перемены — не с сильных решений и не с чужих признаний, а с одного плохого стихотворения, которое ты не порвал.. Characters in frame: Marta, soft-faced blonde woman with a small key necklace, gentle tired presence. Retro-futurist Mars colony, elegant inked linework, halftone shading, readable silhouettes, human drama first, tech second, emotional realism, not a poster, not pin-up art, no readable text, no labels, no signage`

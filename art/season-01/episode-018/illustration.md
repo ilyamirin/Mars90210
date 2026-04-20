@@ -3,24 +3,32 @@
 ## Метаданные
 - Episode: 018
 - Заголовок эпизода: Красивый ключик
+- Prediction ID: `hjwqc9kw2hrmy0cxn7y9y3rxfg`
 - Файл вывода: `illustration.png`
 - Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-018`
 
 ## Изображаемый момент
-На стойке ПВЗ Артём говорит Марте, что у неё красивый ключик; Марта внешне спокойна, но внутренне уже поймана собственной видимостью.
+коллега почти замечает Мартины стихи и задаёт невинный вопрос о ключике.
 
 ## Кадр
 - вертикальный кадр `3:4`
-- Марта и коллега в полуразговоре у стойки
-- акцент на ключике на шее
-- ПВЗ в рабочем свете
-- настроение: неловкая близость, не флирт
+- один читаемый драматический момент, а не постер сезона
+- фокус на герое или узле отношений, который ведёт сцену
+- обязательно читается марсианская среда и бытовая реальность мира
+- human drama first, tech second
+
+## Предметы и continuity
+- Марта: светлые волосы, мягкая телесность, ключик на шее, ранимая внимательность
+
+## Персонажи и опознаваемые детали
+- Марта: светлые волосы, мягкая телесность, ключик на шее, ранимая внимательность
 
 ## Стиль
 - sci-fi comics 70s
-- subtle emotional discovery
 - elegant inked linework
 - halftone shading
+- readable silhouettes
+- emotional realism over spectacle
 
 ## Prompt
-`1970s sci-fi comic illustration, vertical 3:4, subtle emotional discovery at the service counter of a Mars colony pickup point, a tired blonde woman with a tiny silver key necklace is caught off guard when a friendly male coworker notices the key, outwardly calm but inwardly exposed, no flirt cliché, pale service lights, boxes, scanner, retro-futurist logistics interior, human drama first, elegant ink lines, halftone shading, muted steel gray and rust palette`
+`1970s sci-fi comic illustration, vertical 3:4, intimate dramatic scene from Mars90210, коллега почти замечает Мартины стихи и задаёт невинный вопрос о ключике. Time: 24 октября 2089, конец смены. Location: Orbita pickup point on Mars. Story atmosphere: — Но, может быть, не смертельно.. Characters in frame: Marta, soft-faced blonde woman with a small key necklace, gentle tired presence. Retro-futurist Mars colony, elegant inked linework, halftone shading, readable silhouettes, human drama first, tech second, emotional realism, not a poster, not pin-up art, no readable text, no labels, no signage`

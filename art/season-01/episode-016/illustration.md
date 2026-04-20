@@ -3,24 +3,32 @@
 ## Метаданные
 - Episode: 016
 - Заголовок эпизода: Ночная сверка
+- Prediction ID: `rybh3cx5znrmw0cxn7xvp78v6m`
 - Файл вывода: `illustration.png`
 - Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-016`
 
 ## Изображаемый момент
-Ночью Лира одна в стеклянном кабинете ПВЗ, вокруг темнота пустого зала и светящийся экран со схемой `Phase Zero`.
+Лира одна перечитывает доказательства и понимает, что дело не в одном сбое, а в системе.
 
 ## Кадр
 - вертикальный кадр `3:4`
-- Лира одна, уставшая, в куртке или куртка на спинке кресла
-- пустой ночной ПВЗ за стеклом
-- стол, экран, распечатка
-- настроение: не паника, а страшное понимание масштаба
+- один читаемый драматический момент, а не постер сезона
+- фокус на герое или узле отношений, который ведёт сцену
+- обязательно читается марсианская среда и бытовая реальность мира
+- human drama first, tech second
+
+## Предметы и continuity
+- Лира: синяя джинсовая куртка, мягкая собранность, тёплый взгляд
+
+## Персонажи и опознаваемые детали
+- Лира: синяя джинсовая куртка, мягкая собранность, тёплый взгляд
 
 ## Стиль
 - sci-fi comics 70s
-- nocturnal systems tension
 - elegant inked linework
 - halftone shading
+- readable silhouettes
+- emotional realism over spectacle
 
 ## Prompt
-`1970s sci-fi comic illustration, vertical 3:4, nocturnal systems tension inside a glass office in an empty Mars colony pickup point, a tired woman manager studies glowing documents and a secret optimization map late at night, either wearing a worn blue denim jacket or with it hanging on the chair, empty hall beyond, rust Martian darkness outside the dome, quiet terrifying understanding, human drama first, elegant ink lines, halftone shading, cold white and rust palette`
+`1970s sci-fi comic illustration, vertical 3:4, intimate dramatic scene from Mars90210, Лира одна перечитывает доказательства и понимает, что дело не в одном сбое, а в системе. Time: 22 октября 2089, глубокая ночь. Location: Orbita pickup point on Mars. Story atmosphere: За стеклом купола начинал сереть новый марсианский день.. Characters in frame: Lira, warm brown eyes, chestnut hair, worn blue denim jacket, tired but composed manager. Retro-futurist Mars colony, elegant inked linework, halftone shading, readable silhouettes, human drama first, tech second, emotional realism, not a poster, not pin-up art, no readable text, no labels, no signage`

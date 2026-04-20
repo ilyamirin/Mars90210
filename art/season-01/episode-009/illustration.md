@@ -3,30 +3,32 @@
 ## Метаданные
 - Episode: 009
 - Заголовок эпизода: Всё отлично
+- Prediction ID: `5ht1200bbxrmr0cxn7wbekf2gg`
 - Файл вывода: `illustration.png`
 - Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-009`
 
 ## Изображаемый момент
-Руслана после видеозвонка сидит у стола между письмом с Земли и смятой биркой от игрушки. На лице — уже не деловая собранность, а тихий срыв маски.
+Руслана врёт родителям по видеосвязи, что у неё всё под контролем.
 
 ## Кадр
 - вертикальный кадр `3:4`
-- Руслана в аккуратной квартире
-- официальный документ с Земли на столе
-- маленькая смятая бирка рядом
-- на экране ноутбука или панели только что завершённый звонок
-- настроение: хорошая дочь, оставшаяся наедине с ложью
+- один читаемый драматический момент, а не постер сезона
+- фокус на герое или узле отношений, который ведёт сцену
+- обязательно читается марсианская среда и бытовая реальность мира
+- human drama first, tech second
 
 ## Предметы и continuity
-- короткая стрижка, собранность Русланы
-- бирка обязательна
-- письмо должно читаться как серьёзное карьерное предложение
+- Руслана: короткая стрижка, точная осанка, быстрая энергия, деловой силуэт
+
+## Персонажи и опознаваемые детали
+- Руслана: короткая стрижка, точная осанка, быстрая энергия, деловой силуэт
 
 ## Стиль
 - sci-fi comics 70s
-- intimate domestic conflict
 - elegant inked linework
 - halftone shading
+- readable silhouettes
+- emotional realism over spectacle
 
 ## Prompt
-`1970s sci-fi comic illustration, vertical 3:4, intimate domestic conflict in a neat Mars colony apartment, a sharp short-haired woman sits alone after a video call, her composed mask finally slipping, an official Earth job offer letter on the table beside a small crumpled toy tag, muted white walls, tidy interior, faint screen glow from a recently ended family call, tired emotional realism, elegant ink lines, halftone shading, rust-orange and pale gray palette, human drama first`
+`1970s sci-fi comic illustration, vertical 3:4, intimate dramatic scene from Mars90210, Руслана врёт родителям по видеосвязи, что у неё всё под контролем. Time: 11 октября 2089, поздний вечер. Location: Orbita pickup point on Mars. Story atmosphere: Потом не зачеркнула.. Characters in frame: Ruslana, short haircut, sharp posture, fast energetic movement, controlled business silhouette. Retro-futurist Mars colony, elegant inked linework, halftone shading, readable silhouettes, human drama first, tech second, emotional realism, not a poster, not pin-up art, no readable text, no labels, no signage`

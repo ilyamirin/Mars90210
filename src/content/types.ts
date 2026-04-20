@@ -61,6 +61,7 @@ export interface AboutSectionEntry {
   eyebrow: string;
   bodyMarkdown: string;
   visualKey: 'project' | 'ai-gen' | 'creator';
+  image: IllustrationEntry;
 }
 
 export interface ContentStore {

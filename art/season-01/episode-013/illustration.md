@@ -3,23 +3,32 @@
 ## Метаданные
 - Episode: 013
 - Заголовок эпизода: Маленькая ошибка
+- Prediction ID: `d4tyjb0vrdrmw0cxn7xam7fk5r`
 - Файл вывода: `illustration.png`
 - Папка: `/Users/ilyagmirin/PycharmProjects/Mars90210/art/season-01/episode-013`
 
 ## Изображаемый момент
-Марта на складе между полками `7B` и `7D` смотрит на бумагу с маленькой ошибкой и впервые не бросается немедленно всё исправлять.
+Марта замечает небольшую ошибку в заказе и впервые не исправляет её мгновенно.
 
 ## Кадр
 - вертикальный кадр `3:4`
-- Марта на складе, мягкое лицо, светлые волосы, ключик
-- в руках лист с ошибкой, вокруг коробки и стеллажи
-- настроение: не катастрофа, а тихий внутренний бунт
+- один читаемый драматический момент, а не постер сезона
+- фокус на герое или узле отношений, который ведёт сцену
+- обязательно читается марсианская среда и бытовая реальность мира
+- human drama first, tech second
+
+## Предметы и continuity
+- Марта: светлые волосы, мягкая телесность, ключик на шее, ранимая внимательность
+
+## Персонажи и опознаваемые детали
+- Марта: светлые волосы, мягкая телесность, ключик на шее, ранимая внимательность
 
 ## Стиль
 - sci-fi comics 70s
-- intimate warehouse scene
 - elegant inked linework
 - halftone shading
+- readable silhouettes
+- emotional realism over spectacle
 
 ## Prompt
-`1970s sci-fi comic illustration, vertical 3:4, intimate warehouse scene inside a Mars colony pickup point, a tired blonde woman with a tiny silver key necklace stands between labeled storage shelves holding a paper sheet with a small but meaningful error, quiet internal rebellion, boxes and retro-futurist storage aisles around her, pale industrial light, human drama first, elegant ink lines, halftone shading, muted gray and rust palette`
+`1970s sci-fi comic illustration, vertical 3:4, intimate dramatic scene from Mars90210, Марта замечает небольшую ошибку в заказе и впервые не исправляет её мгновенно. Time: 17 октября 2089, день. Location: Orbita pickup point on Mars. Story atmosphere: Потом очень тихо кивнула.. Characters in frame: Marta, soft-faced blonde woman with a small key necklace, gentle tired presence. Retro-futurist Mars colony, elegant inked linework, halftone shading, readable silhouettes, human drama first, tech second, emotional realism, not a poster, not pin-up art, no readable text, no labels, no signage`
