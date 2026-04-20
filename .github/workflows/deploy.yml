@@ -36,6 +36,14 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Restore optimized media cache
+        uses: actions/cache@v4
+        with:
+          path: public/media/optimized
+          key: optimized-media-${{ runner.os }}-${{ hashFiles('scripts/optimize-media.mjs') }}-${{ hashFiles('art/**/*.png') }}
+          restore-keys: |
+            optimized-media-${{ runner.os }}-${{ hashFiles('scripts/optimize-media.mjs') }}-
+
       - name: Build static site
         env:
           GITHUB_PAGES: 'true'
