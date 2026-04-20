@@ -1,4 +1,3 @@
-import { execFileSync } from 'node:child_process';
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -71,11 +70,22 @@ function sourceIllustrationPath(slug) {
 }
 
 function readImageDimensions(sourcePath) {
-  const output = execFileSync('sips', ['-g', 'pixelWidth', '-g', 'pixelHeight', sourcePath], {
-    encoding: 'utf8',
-  });
-  const width = Number(output.match(/pixelWidth:\s+(\d+)/)?.[1] ?? 0);
-  const height = Number(output.match(/pixelHeight:\s+(\d+)/)?.[1] ?? 0);
+  const png = readFileSync(sourcePath);
+  const signature = png.subarray(0, 8);
+  const expectedSignature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
+
+  if (!signature.equals(expectedSignature)) {
+    throw new Error(`Unsupported image format for dimension read: ${sourcePath}`);
+  }
+
+  const chunkType = png.toString('ascii', 12, 16);
+
+  if (chunkType !== 'IHDR') {
+    throw new Error(`Invalid PNG header for dimension read: ${sourcePath}`);
+  }
+
+  const width = png.readUInt32BE(16);
+  const height = png.readUInt32BE(20);
 
   return { width, height };
 }
