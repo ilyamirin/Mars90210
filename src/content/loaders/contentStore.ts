@@ -4,6 +4,7 @@ import type {
   ContentStore,
   WorldEntry,
 } from '../types';
+import { withBaseAssetPath } from '../assetPaths';
 import { getEpisodeSummaries } from './episodeContent';
 import {
   excerptParagraphs,
@@ -37,7 +38,7 @@ function toAltFromName(name: string) {
 }
 
 function optimizedPngPath(relativePath: string) {
-  return `/media/optimized/${relativePath}`;
+  return withBaseAssetPath(`media/optimized/${relativePath}`);
 }
 
 function optimizedWebpPath(relativePath: string) {

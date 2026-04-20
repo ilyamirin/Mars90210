@@ -1,4 +1,5 @@
 import manifest from '../generated/episodes-manifest.json';
+import { withBaseAssetPath } from '../assetPaths';
 import type { EpisodeEntry, EpisodeSummaryEntry } from '../types';
 import { stripLeadSections } from './parseMarkdown';
 
@@ -7,7 +8,21 @@ const episodeMarkdown = import.meta.glob('/episodes/season-01/*.md', {
   query: '?raw',
 });
 
-const manifestEntries = manifest as EpisodeSummaryEntry[];
+function withResolvedIllustration(summary: EpisodeSummaryEntry): EpisodeSummaryEntry {
+  const illustration = summary.illustration;
+
+  return {
+    ...summary,
+    illustration: {
+      ...illustration,
+      src: withBaseAssetPath(illustration.src),
+      pngSrc: illustration.pngSrc ? withBaseAssetPath(illustration.pngSrc) : '',
+      avifSrc: illustration.avifSrc ? withBaseAssetPath(illustration.avifSrc) : '',
+    },
+  };
+}
+
+const manifestEntries = (manifest as EpisodeSummaryEntry[]).map(withResolvedIllustration);
 const summariesBySlug = new Map(manifestEntries.map((entry) => [entry.slug, entry]));
 const cache = new Map<string, Promise<EpisodeEntry | undefined>>();
 

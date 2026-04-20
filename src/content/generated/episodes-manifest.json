@@ -8,9 +8,9 @@
     "keyScene": "сбой в ПВЗ и ручная выдача посылок под красными аварийными огнями",
     "excerpt": "Лира проснулась раньше будильника — от той особенной тишины, которая бывает только под куполом перед началом рабочего дня, когда город ещё не заговорил, но уже дышит. На кухонной панели медленно проступали цифры времени. Вода в чайнике едва слышно шуршала. Снаружи, за светлым стеклом, лежал привычный марсианский рассвет: не розовый, не земной, а ржаво-золотой, как будто кто-то осторожно тёр о небо старую медь.",
     "illustration": {
-      "src": "/media/optimized/season-01/episode-001/illustration.png",
-      "pngSrc": "/media/optimized/season-01/episode-001/illustration.png",
-      "avifSrc": "/media/optimized/season-01/episode-001/illustration.avif",
+      "src": "media/optimized/season-01/episode-001/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-001/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-001/illustration.avif",
       "width": 896,
       "height": 1200,
       "isPlaceholder": false,
@@ -26,9 +26,9 @@
     "keyScene": "Айгуль находит в ночных логах след `Phase Zero` и читает публичный комментарий Эйрона",
     "excerpt": "Айгуль пришла в ПВЗ раньше всех, кроме машин.",
     "illustration": {
-      "src": "/media/optimized/season-01/episode-002/illustration.png",
-      "pngSrc": "/media/optimized/season-01/episode-002/illustration.png",
-      "avifSrc": "/media/optimized/season-01/episode-002/illustration.avif",
+      "src": "media/optimized/season-01/episode-002/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-002/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-002/illustration.avif",
       "width": 896,
       "height": 1200,
       "isPlaceholder": false,
@@ -44,9 +44,9 @@
     "keyScene": "клиентка жалуется, что улыбка Марты «не соответствует стандарту сервиса»",
     "excerpt": "К полудню Марта уже чувствовала, как день оседает на ней мелкой усталой пылью.",
     "illustration": {
-      "src": "/media/optimized/season-01/episode-003/illustration.png",
-      "pngSrc": "/media/optimized/season-01/episode-003/illustration.png",
-      "avifSrc": "/media/optimized/season-01/episode-003/illustration.avif",
+      "src": "media/optimized/season-01/episode-003/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-003/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-003/illustration.avif",
       "width": 896,
       "height": 1200,
       "isPlaceholder": false,
@@ -62,9 +62,9 @@
     "keyScene": "Руслана получает с Земли предложение о повышении и почти произносит «да»",
     "excerpt": "Письмо лежало на стойке, плоское, официальное, с земной маркировкой и сухой синей полосой безопасности по краю.",
     "illustration": {
-      "src": "/media/optimized/season-01/episode-004/illustration.png",
-      "pngSrc": "/media/optimized/season-01/episode-004/illustration.png",
-      "avifSrc": "/media/optimized/season-01/episode-004/illustration.avif",
+      "src": "media/optimized/season-01/episode-004/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-004/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-004/illustration.avif",
       "width": 896,
       "height": 1200,
       "isPlaceholder": false,
@@ -80,9 +80,9 @@
     "keyScene": "четыре женщины остаются в ПВЗ после смены, и каждая прячет не то, что следовало бы",
     "excerpt": "В субботу ПВЗ закрывался не позже обычного, но тишина после закрытия всегда была другой.",
     "illustration": {
-      "src": "/media/optimized/season-01/episode-005/illustration.png",
-      "pngSrc": "/media/optimized/season-01/episode-005/illustration.png",
-      "avifSrc": "/media/optimized/season-01/episode-005/illustration.avif",
+      "src": "media/optimized/season-01/episode-005/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-005/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-005/illustration.avif",
       "width": 896,
       "height": 1200,
       "isPlaceholder": false,
@@ -98,9 +98,9 @@
     "keyScene": "Силан впервые приходит в ПВЗ как представитель `NovaCredit`",
     "excerpt": "Силан пришёл в ПВЗ в десять минут одиннадцатого — не рано и не поздно, а ровно в то время, которое человек с хорошим воспитанием выбирает, если не хочет казаться ни виноватым, ни слишком уверенным.",
     "illustration": {
-      "src": "/media/optimized/season-01/episode-006/illustration.png",
-      "pngSrc": "/media/optimized/season-01/episode-006/illustration.png",
-      "avifSrc": "/media/optimized/season-01/episode-006/illustration.avif",
+      "src": "media/optimized/season-01/episode-006/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-006/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-006/illustration.avif",
       "width": 896,
       "height": 1200,
       "isPlaceholder": false,
@@ -116,13 +116,13 @@
     "keyScene": "Айгуль видит Данила у грузового терминала `Новой Зари`",
     "excerpt": "Вечером логистика всегда звучала иначе.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 007 появится позже"
+      "src": "media/optimized/season-01/episode-007/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-007/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-007/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Чужое прошлое на грузовом терминале"
     }
   },
   {
@@ -134,13 +134,13 @@
     "keyScene": "Марта пишет ночью не печальный, а злой текст и впервые не стыдится этого сразу",
     "excerpt": "Ночью квартира Марты становилась меньше.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 008 появится позже"
+      "src": "media/optimized/season-01/episode-008/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-008/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-008/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Плохое стихотворение"
     }
   },
   {
@@ -152,13 +152,13 @@
     "keyScene": "Руслана врёт родителям по видеосвязи, что у неё всё под контролем",
     "excerpt": "Руслана ненавидела пятничные звонки домой.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 009 появится позже"
+      "src": "media/optimized/season-01/episode-009/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-009/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-009/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Всё отлично"
     }
   },
   {
@@ -170,13 +170,13 @@
     "keyScene": "Владимир пытается столкнуть Лиру и Айгуль, подбрасывая им искажённые слова друг о друге",
     "excerpt": "Владимир умел заходить в пространство так, будто уже давно в нём хозяин.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 010 появится позже"
+      "src": "media/optimized/season-01/episode-010/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-010/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-010/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Слова, сказанные как будто между прочим"
     }
   },
   {
@@ -188,13 +188,13 @@
     "keyScene": "Лира принимает приглашение Силана на чай после тяжёлого дня",
     "excerpt": "Лира весь день собирала себя по частям.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 011 появится позже"
+      "src": "media/optimized/season-01/episode-011/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-011/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-011/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Чай, который нельзя назвать свиданием"
     }
   },
   {
@@ -206,13 +206,13 @@
     "keyScene": "Айгуль находит старый бумажный дневник и перечитывает запись о желании быть обнятой",
     "excerpt": "Айгуль редко открывала нижний ящик.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 012 появится позже"
+      "src": "media/optimized/season-01/episode-012/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-012/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-012/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Дневник на дне ящика"
     }
   },
   {
@@ -224,13 +224,13 @@
     "keyScene": "Марта замечает небольшую ошибку в заказе и впервые не исправляет её мгновенно",
     "excerpt": "Ошибка была крошечной.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 013 появится позже"
+      "src": "media/optimized/season-01/episode-013/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-013/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-013/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Маленькая ошибка"
     }
   },
   {
@@ -242,13 +242,13 @@
     "keyScene": "Руслана уже готова подтвердить земное предложение, но в последний момент не произносит согласие",
     "excerpt": "Вечером пятницы Земля позвонила сама.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 014 появится позже"
+      "src": "media/optimized/season-01/episode-014/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-014/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-014/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Почти «да»"
     }
   },
   {
@@ -260,13 +260,13 @@
     "keyScene": "Алина передаёт Лире файл с первыми доказательствами фальсификаций",
     "excerpt": "К вечеру субботы ПВЗ выдыхался так же, как люди.",
     "illustration": {
-      "src": "",
-      "pngSrc": "",
-      "avifSrc": "",
-      "width": 0,
-      "height": 0,
-      "isPlaceholder": true,
-      "alt": "Иллюстрация к эпизоду 015 появится позже"
+      "src": "media/optimized/season-01/episode-015/illustration.png",
+      "pngSrc": "media/optimized/season-01/episode-015/illustration.png",
+      "avifSrc": "media/optimized/season-01/episode-015/illustration.avif",
+      "width": 896,
+      "height": 1200,
+      "isPlaceholder": false,
+      "alt": "Файл без подписи"
     }
   },
   {

@@ -13,7 +13,7 @@ describe('buildContentStore', () => {
     const store = buildContentStore();
 
     expect(store.characters.lira.portrait.src).toContain(
-      '/media/optimized/portraits/heroines/lira/portrait.png',
+      'media/optimized/portraits/heroines/lira/portrait.png',
     );
     expect(store.characters.marta.tagline.length).toBeGreaterThan(10);
     expect(store.characters.ruslana.shortBodyMarkdown.length).toBeLessThan(
@@ -34,10 +34,10 @@ describe('buildContentStore', () => {
     const store = buildContentStore();
 
     expect(store.episodes[0].illustration.avifSrc).toContain(
-      '/media/optimized/season-01/episode-001/illustration.avif',
+      'media/optimized/season-01/episode-001/illustration.avif',
     );
     expect(store.episodes[0].illustration.pngSrc).toContain(
-      '/media/optimized/season-01/episode-001/illustration.png',
+      'media/optimized/season-01/episode-001/illustration.png',
     );
     expect(store.episodes[0].illustration.width).toBeGreaterThan(0);
     expect(store.episodes[0].illustration.height).toBeGreaterThan(0);

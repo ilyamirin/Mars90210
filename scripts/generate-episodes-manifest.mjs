@@ -58,11 +58,11 @@ function firstParagraph(markdown) {
 }
 
 function optimizedPngPath(slug) {
-  return `/media/optimized/season-01/${slug}/illustration.png`;
+  return `media/optimized/season-01/${slug}/illustration.png`;
 }
 
 function optimizedAvifPath(slug) {
-  return `/media/optimized/season-01/${slug}/illustration.avif`;
+  return `media/optimized/season-01/${slug}/illustration.avif`;
 }
 
 function sourceIllustrationPath(slug) {
