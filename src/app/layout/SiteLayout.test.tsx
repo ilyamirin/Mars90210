@@ -12,6 +12,6 @@ test('renders brand and primary navigation', () => {
   );
 
   expect(screen.getByText('Mars90210')).toBeInTheDocument();
-  expect(screen.getByRole('link', { name: 'Героини' })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: 'Персонажи' })).toBeInTheDocument();
   expect(screen.getByRole('contentinfo')).toBeInTheDocument();
 });

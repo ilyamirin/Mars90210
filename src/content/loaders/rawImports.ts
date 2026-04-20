@@ -15,3 +15,17 @@ export const aboutMarkdown = import.meta.glob('/site/about/*.md', {
   import: 'default',
   query: '?raw',
 });
+
+export const optimizedPortraitPngAssets = import.meta.glob(
+  '/public/media/optimized/portraits/heroines/*/portrait.png',
+  {
+    eager: false,
+  },
+);
+
+export const optimizedPortraitAvifAssets = import.meta.glob(
+  '/public/media/optimized/portraits/heroines/*/portrait.avif',
+  {
+    eager: false,
+  },
+);

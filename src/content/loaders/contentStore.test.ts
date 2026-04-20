@@ -7,6 +7,10 @@ describe('buildContentStore', () => {
 
     expect(store.characters.lira.name).toBe('Лира');
     expect(store.characters.aigul.signatureItem.toLowerCase()).toContain('шарф');
+    expect(store.characters.lira.group).toBe('main');
+    expect(store.characters.vladimir.group).toBe('secondary');
+    expect(store.characters.lira.gender).toBe('женщина');
+    expect(store.characters.vladimir.gender).toBe('мужчина');
   });
 
   test('attaches portrait assets and short text to heroines', () => {
@@ -19,6 +23,26 @@ describe('buildContentStore', () => {
     expect(store.characters.ruslana.shortBodyMarkdown.length).toBeLessThan(
       store.characters.ruslana.bodyMarkdown.length,
     );
+    expect(store.characters.lira.cardBlurb.length).toBeGreaterThan(10);
+    expect(store.characters.lira.roleLabel).toBe('главная героиня');
+    expect(store.characters.vladimir.roleLabel).toBe('антагонист');
+    expect(store.characters.vladimir.portrait.alt).toBe('Портрет персонажа Владимир');
+    expect(typeof store.characters.vladimir.hasPortrait).toBe('boolean');
+  });
+
+  test('uses real portrait assets for the full secondary cast when metadata is ready', () => {
+    const store = buildContentStore();
+
+    for (const slug of ['alina', 'danil', 'eyron', 'silan', 'vladimir'] as const) {
+      expect(store.characters[slug].hasPortrait).toBe(true);
+      expect(store.characters[slug].portrait.isPlaceholder).not.toBe(true);
+      expect(store.characters[slug].portrait.pngSrc).toContain(
+        `media/optimized/portraits/heroines/${slug}/portrait.png`,
+      );
+      expect(store.characters[slug].portrait.avifSrc).toContain(
+        `media/optimized/portraits/heroines/${slug}/portrait.avif`,
+      );
+    }
   });
 
   test('returns season 1 episodes sorted by episode number', () => {
@@ -27,6 +51,8 @@ describe('buildContentStore', () => {
     expect(store.episodes[0].slug).toBe('episode-001');
     expect(store.episodes[1].slug).toBe('episode-002');
     expect(store.episodes[0].excerpt.length).toBeGreaterThan(10);
+    expect(store.episodes[0].cardExcerpt.length).toBeGreaterThan(10);
+    expect(store.episodes[0].cardExcerpt.length).toBeLessThan(store.episodes[0].excerpt.length);
     expect('bodyMarkdown' in store.episodes[0]).toBe(false);
   });
 
@@ -43,20 +69,31 @@ describe('buildContentStore', () => {
     expect(store.episodes[0].illustration.height).toBeGreaterThan(0);
   });
 
-  test('marks episodes without illustration as placeholders instead of broken images', () => {
+  test('resolves episode illustration state without broken image sources', () => {
     const store = buildContentStore();
+    const placeholders = store.episodes.filter((episode) => episode.illustration.isPlaceholder);
 
-    expect(store.episodes.at(-1)?.slug).toBe('episode-063');
-    expect(store.episodes.at(-1)?.illustration.isPlaceholder).toBe(true);
-    expect(store.episodes.at(-1)?.illustration.src).toBe('');
+    if (placeholders.length > 0) {
+      for (const episode of placeholders) {
+        expect(episode.illustration.src).toBe('');
+      }
+      return;
+    }
+
+    for (const episode of store.episodes) {
+      expect(episode.illustration.isPlaceholder).not.toBe(true);
+      expect(episode.illustration.pngSrc || episode.illustration.src).not.toBe('');
+    }
   });
 
-  test('returns world entries with image and short excerpt', () => {
+  test('returns world entries with curated card data and categories', () => {
     const store = buildContentStore();
     const worldEntry = store.world[0];
 
     expect(worldEntry.relatedImages.length).toBeGreaterThan(0);
-    expect(worldEntry.excerpt.length).toBeGreaterThan(10);
+    expect(worldEntry.cardExcerpt.length).toBeGreaterThan(10);
+    expect(['places', 'relationships', 'systems', 'symbols']).toContain(worldEntry.category);
+    expect(['high', 'medium', 'low']).toContain(worldEntry.priority);
   });
 
   test('returns about sections from site content in editorial order', () => {

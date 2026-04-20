@@ -3,6 +3,7 @@ import { HeroineBand } from '../../components/HeroineBand';
 import { MediaImage } from '../../components/MediaImage';
 import { SectionHeading } from '../../components/SectionHeading';
 import { buildContentStore } from '../../content/loaders/contentStore';
+import { selectWorldPreviewEntries } from '../../content/worldPresentation';
 import { Link } from 'react-router-dom';
 import { SectionGlyph } from '../../components/SectionGlyph';
 
@@ -14,7 +15,7 @@ export function HomePage() {
   const aboutTeaser = store.about.find((entry) => entry.slug === 'project');
   const currentEpisode = store.episodes[0];
   const galleryEpisodes = store.episodes.slice(0, 4);
-  const worldPreview = store.world.slice(0, 3);
+  const worldPreview = selectWorldPreviewEntries(store.world);
 
   return (
     <div className="home-page">
@@ -31,9 +32,9 @@ export function HomePage() {
       <section className="content-section">
         <div className="about-teaser">
           <div className="about-teaser-visual">
-            <p className="section-eyebrow">О проекте</p>
-            <SectionGlyph visualKey="project" />
-          </div>
+                <p className="section-eyebrow">О проекте</p>
+                <SectionGlyph visualKey="project" />
+              </div>
           <div className="about-teaser-copy">
             <h2>{aboutTeaser?.title ?? 'Mars90210 — О проекте'}</h2>
             <p>
@@ -86,7 +87,7 @@ export function HomePage() {
               <MediaImage image={entry.relatedImages[0]} className="world-preview-media" />
               <div className="world-preview-copy">
                 <h3>{entry.title}</h3>
-                <p>{entry.excerpt}</p>
+                <p>{entry.cardExcerpt}</p>
               </div>
             </article>
           ))}

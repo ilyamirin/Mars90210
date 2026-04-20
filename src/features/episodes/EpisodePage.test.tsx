@@ -11,10 +11,8 @@ test('renders episode metadata and prose', async () => {
     </MemoryRouter>,
   );
 
-  expect(
-    await screen.findByRole('heading', { name: 'Синий рукав, красный сигнал' }),
-  ).toBeInTheDocument();
   expect(await screen.findByText(/Фокус:/)).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'Синий рукав, красный сигнал' })).toBeInTheDocument();
 });
 
 test('does not render generation metadata inside episode prose', async () => {

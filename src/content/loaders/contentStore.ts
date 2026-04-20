@@ -12,13 +12,20 @@ import {
   extractMetadataValue,
   extractParagraph,
   extractSection,
+  extractSectionAny,
   extractTopHeading,
   firstParagraph,
   shortenMarkdown,
   stripLeadSections,
   stripSeriesPrefix,
 } from './parseMarkdown';
-import { aboutMarkdown, characterMarkdown, worldMarkdown } from './rawImports';
+import {
+  aboutMarkdown,
+  characterMarkdown,
+  optimizedPortraitAvifAssets,
+  optimizedPortraitPngAssets,
+  worldMarkdown,
+} from './rawImports';
 
 function pathSlug(path: string) {
   return path.split('/').pop()!.replace('.md', '');
@@ -34,7 +41,7 @@ function selectSignatureItem(bullets: string[]) {
 }
 
 function toAltFromName(name: string) {
-  return `Портрет героини ${name}`;
+  return `Портрет персонажа ${name}`;
 }
 
 function optimizedPngPath(relativePath: string) {
@@ -47,6 +54,17 @@ function optimizedWebpPath(relativePath: string) {
 
 function portraitPath(slug: string) {
   return `portraits/heroines/${slug}/portrait.png`;
+}
+
+function portraitAssetReady(slug: string) {
+  const pngKey = `/public/media/optimized/portraits/heroines/${slug}/portrait.png`;
+  const avifKey = `/public/media/optimized/portraits/heroines/${slug}/portrait.avif`;
+
+  return pngKey in optimizedPortraitPngAssets && avifKey in optimizedPortraitAvifAssets;
+}
+
+function priorityRank(priority: WorldEntry['priority']) {
+  return { high: 0, medium: 1, low: 2 }[priority];
 }
 
 function worldImageMap(slug: string) {
@@ -63,10 +81,10 @@ function worldImageMap(slug: string) {
       'season-01/episode-003/illustration.png',
       'season-01/episode-004/illustration.png',
     ],
-    'visual-language': [
-      'season-01/episode-005/illustration.png',
-      'season-01/episode-006/illustration.png',
-    ],
+      'visual-language': [
+        'season-01/episode-005/illustration.png',
+        'season-01/episode-006/illustration.png',
+      ],
     institutions: [
       'season-01/episode-001/illustration.png',
       'season-01/episode-002/illustration.png',
@@ -86,25 +104,54 @@ function buildCharacters(): Record<string, CharacterEntry> {
     Object.entries(characterMarkdown).map(([path, markdownValue]) => {
       const markdown = markdownValue as string;
       const slug = pathSlug(path);
-      const appearance = extractSection(markdown, 'Внешность и пластика');
+      const appearance = extractSectionAny(markdown, ['Внешность и пластика', 'Внешний рисунок']);
       const appearanceBullets = extractBullets(appearance);
       const bodyMarkdown = stripLeadSections(markdown);
       const name = stripSeriesPrefix(extractTopHeading(markdown));
+      const gender = extractMetadataValue(markdown, 'Пол') as CharacterEntry['gender'];
+      const group = extractMetadataValue(markdown, 'Группа') as CharacterEntry['group'];
+      const roleLabel = extractMetadataValue(markdown, 'Роль на сайте');
+      const cardBlurb = extractMetadataValue(markdown, 'Карточка');
+      const hasPortrait =
+        extractMetadataValue(markdown, 'Портрет') === 'ready' && portraitAssetReady(slug);
+      const summary = extractParagraph(extractSectionAny(markdown, ['Кто она', 'Кто он']));
+      const tagline =
+        extractParagraph(extractSection(markdown, 'Внутренний конфликт')) ||
+        extractParagraph(extractSectionAny(markdown, ['Функция в сезоне', 'Эмоциональная функция'])) ||
+        cardBlurb ||
+        summary;
+      const signatureItem =
+        selectSignatureItem(appearanceBullets) ||
+        extractParagraph(extractSection(markdown, 'Важное правило'));
 
       return [
         slug,
         {
           slug,
           name,
-          summary: extractParagraph(extractSection(markdown, 'Кто она')),
-          signatureItem: selectSignatureItem(appearanceBullets),
-          tagline: extractParagraph(extractSection(markdown, 'Внутренний конфликт')),
-          portrait: {
-            src: optimizedPngPath(portraitPath(slug)),
-            pngSrc: optimizedPngPath(portraitPath(slug)),
-            avifSrc: optimizedWebpPath(portraitPath(slug)),
-            alt: toAltFromName(name),
-          },
+          gender,
+          group,
+          roleLabel,
+          cardBlurb,
+          hasPortrait,
+          summary,
+          signatureItem,
+          tagline,
+          portrait: hasPortrait
+            ? {
+                src: optimizedPngPath(portraitPath(slug)),
+                pngSrc: optimizedPngPath(portraitPath(slug)),
+                avifSrc: optimizedWebpPath(portraitPath(slug)),
+                alt: toAltFromName(name),
+              }
+            : {
+                src: '',
+                pngSrc: '',
+                avifSrc: '',
+                isPlaceholder: true,
+                alt: toAltFromName(name),
+                placeholderText: 'Портрет появится позже',
+              },
           markdown,
           bodyMarkdown,
           shortBodyMarkdown: shortenMarkdown(bodyMarkdown, 2),
@@ -118,16 +165,31 @@ function buildWorld(): WorldEntry[] {
   return Object.entries(worldMarkdown)
     .map(([path, markdownValue]) => {
       const markdown = markdownValue as string;
+      const bodyMarkdown = stripLeadSections(markdown);
+      const category = extractMetadataValue(markdown, 'Категория') as WorldEntry['category'];
+      const priority = extractMetadataValue(markdown, 'Приоритет') as WorldEntry['priority'];
+
       return {
         slug: pathSlug(path),
         title: stripSeriesPrefix(extractTopHeading(markdown)),
-        excerpt: firstParagraph(stripLeadSections(markdown)),
+        excerpt: firstParagraph(bodyMarkdown),
+        cardExcerpt: extractMetadataValue(markdown, 'Карточка'),
+        category,
+        priority,
         relatedImages: worldImageMap(pathSlug(path)),
         markdown,
-        bodyMarkdown: stripLeadSections(markdown),
+        bodyMarkdown,
       };
     })
-    .sort((left, right) => left.title.localeCompare(right.title, 'ru'));
+    .sort((left, right) => {
+      const priorityDelta = priorityRank(left.priority) - priorityRank(right.priority);
+
+      if (priorityDelta !== 0) {
+        return priorityDelta;
+      }
+
+      return left.title.localeCompare(right.title, 'ru');
+    });
 }
 
 function visualKeyForSlug(slug: string): AboutSectionEntry['visualKey'] {

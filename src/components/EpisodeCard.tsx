@@ -17,7 +17,7 @@ export function EpisodeCard({ episode }: { episode: EpisodeSummaryEntry }) {
       <div className="episode-card-copy">
         <p className="section-eyebrow">Эпизод {String(episode.number).padStart(3, '0')}</p>
         <h3>{episode.title}</h3>
-        <p>{episode.excerpt}</p>
+        <p>{episode.cardExcerpt}</p>
         <span className="micro-link">Читать далее...</span>
       </div>
     </Link>

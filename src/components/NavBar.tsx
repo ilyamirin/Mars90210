@@ -7,7 +7,7 @@ export function NavBar() {
         Mars90210
       </NavLink>
       <nav aria-label="Основная" className="site-nav">
-        <NavLink to="/characters">Героини</NavLink>
+        <NavLink to="/characters">Персонажи</NavLink>
         <NavLink to="/episodes">Эпизоды</NavLink>
         <NavLink to="/world">Мир</NavLink>
         <NavLink to="/about">О проекте</NavLink>

@@ -6,11 +6,17 @@ export interface IllustrationEntry {
   width?: number;
   height?: number;
   isPlaceholder?: boolean;
+  placeholderText?: string;
 }
 
 export interface CharacterEntry {
   slug: string;
   name: string;
+  gender: 'женщина' | 'мужчина';
+  group: 'main' | 'secondary';
+  roleLabel: string;
+  cardBlurb: string;
+  hasPortrait: boolean;
   summary: string;
   signatureItem: string;
   tagline: string;
@@ -28,6 +34,7 @@ export interface EpisodeSummaryEntry {
   timePoint: string;
   keyScene: string;
   excerpt: string;
+  cardExcerpt: string;
   illustration: IllustrationEntry;
 }
 
@@ -40,6 +47,9 @@ export interface WorldEntry {
   slug: string;
   title: string;
   excerpt: string;
+  cardExcerpt: string;
+  category: 'places' | 'relationships' | 'systems' | 'symbols';
+  priority: 'high' | 'medium' | 'low';
   relatedImages: IllustrationEntry[];
   markdown: string;
   bodyMarkdown: string;

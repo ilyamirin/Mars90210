@@ -10,6 +10,9 @@ test('renders world as short-form visual cards instead of full markdown dump', (
   );
 
   expect(screen.getByRole('heading', { name: 'Мир под куполом' })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'Места' })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'Системы и силы' })).toBeInTheDocument();
+  expect(screen.getByRole('heading', { name: 'Символы и связи' })).toBeInTheDocument();
   expect(screen.getAllByRole('img').length).toBeGreaterThan(2);
   expect(screen.queryByText('Психологическая правда мира')).not.toBeInTheDocument();
 });

@@ -13,6 +13,11 @@ test('renders the first batch of episode cards and reveals more on demand', asyn
   expect(screen.getByRole('link', { name: /Читать Синий рукав, красный сигнал/i })).toBeInTheDocument();
   expect(screen.getByRole('link', { name: /Читать Дневник на дне ящика/i })).toBeInTheDocument();
   expect(
+    screen.getByText(
+      'Лира проснулась раньше будильника — от той особенной тишины, которая бывает только под куполом перед началом рабочего дня, когда город ещё не заговорил, но уже дышит.',
+    ),
+  ).toBeInTheDocument();
+  expect(
     screen.queryByRole('link', { name: /Читать Маленькая ошибка/i }),
   ).not.toBeInTheDocument();
 

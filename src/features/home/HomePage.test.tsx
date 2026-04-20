@@ -28,6 +28,18 @@ test('renders the approved homepage sections', () => {
   expect(screen.getByRole('heading', { name: 'Мир под куполом' })).toBeInTheDocument();
 });
 
+test('curates the world preview instead of taking the first markdown entries blindly', () => {
+  render(
+    <MemoryRouter>
+      <HomePage />
+    </MemoryRouter>,
+  );
+
+  expect(screen.getByText('Локации')).toBeInTheDocument();
+  expect(screen.getByText('Институты и силы')).toBeInTheDocument();
+  expect(screen.getByText('Символы и предметы')).toBeInTheDocument();
+});
+
 test('renders tappable portrait cards for all heroines', () => {
   render(
     <MemoryRouter>

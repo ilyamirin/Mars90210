@@ -18,7 +18,7 @@ export function MediaImage({
   if (image.isPlaceholder) {
     return (
       <div className={className} data-placeholder="true" role="img" aria-label={image.alt}>
-        <span>Иллюстрация появится позже</span>
+        <span>{image.placeholderText ?? 'Иллюстрация появится позже'}</span>
       </div>
     );
   }

@@ -38,6 +38,18 @@ export function extractSection(markdown: string, heading: string) {
   return body.join('\n').trim();
 }
 
+export function extractSectionAny(markdown: string, headings: string[]) {
+  for (const heading of headings) {
+    const section = extractSection(markdown, heading);
+
+    if (section) {
+      return section;
+    }
+  }
+
+  return '';
+}
+
 export function extractBullets(section: string) {
   return section
     .split('\n')

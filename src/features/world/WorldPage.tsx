@@ -1,9 +1,10 @@
 import { MediaImage } from '../../components/MediaImage';
 import { SectionHeading } from '../../components/SectionHeading';
 import { buildContentStore } from '../../content/loaders/contentStore';
+import { groupWorldEntries } from '../../content/worldPresentation';
 
 export function WorldPage() {
-  const worldEntries = buildContentStore().world.slice(0, 5);
+  const worldGroups = groupWorldEntries(buildContentStore().world);
 
   return (
     <div className="content-page">
@@ -12,23 +13,30 @@ export function WorldPage() {
         title="Мир под куполом"
         description="Меньше справки, больше образов: несколько узлов мира, в которых всё уже чувствуется."
       />
-      <div className="world-stack">
-        {worldEntries.map((entry) => (
-          <article key={entry.slug} className="world-entry world-entry-visual">
-            <div className="world-entry-gallery">
-              {entry.relatedImages.slice(0, 2).map((image) => (
-                <MediaImage
-                  key={`${entry.slug}-${image.src || image.alt}`}
-                  image={image}
-                  className="world-entry-gallery-media"
-                />
+      <div className="world-groups">
+        {worldGroups.map((group) => (
+          <section key={group.title} className="world-group">
+            <h2>{group.title}</h2>
+            <div className="world-stack">
+              {group.entries.map((entry) => (
+                <article key={entry.slug} className="world-entry world-entry-visual">
+                  <div className="world-entry-gallery">
+                    {entry.relatedImages.slice(0, 2).map((image) => (
+                      <MediaImage
+                        key={`${entry.slug}-${image.src || image.alt}`}
+                        image={image}
+                        className="world-entry-gallery-media"
+                      />
+                    ))}
+                  </div>
+                  <div className="world-entry-copy">
+                    <h3>{entry.title}</h3>
+                    <p>{entry.cardExcerpt}</p>
+                  </div>
+                </article>
               ))}
             </div>
-            <div className="world-entry-copy">
-              <h2>{entry.title}</h2>
-              <p>{entry.excerpt}</p>
-            </div>
-          </article>
+          </section>
         ))}
       </div>
     </div>

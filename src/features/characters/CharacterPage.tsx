@@ -13,20 +13,22 @@ export function CharacterPage() {
 
   return (
     <article className="content-page">
-      <p className="section-eyebrow">Героиня</p>
+      <p className="section-eyebrow">{character.roleLabel}</p>
       <div className="character-hero">
         <div className="character-portrait-block" data-testid="character-portrait-block">
           <MediaImage image={character.portrait} className="character-portrait" />
         </div>
         <div className="character-copy" data-testid="character-copy-block">
           <h1>{character.name}</h1>
-          <p className="hero-copy">{character.tagline}</p>
-          <p className="character-signature">{character.signatureItem}</p>
+          <p className="hero-copy">{character.tagline || character.summary}</p>
+          {character.signatureItem ? (
+            <p className="character-signature">{character.signatureItem}</p>
+          ) : null}
           <MarkdownProse markdown={character.shortBodyMarkdown} />
         </div>
       </div>
       <Link className="secondary-link" to="/characters">
-        Назад к героиням
+        Назад к персонажам
       </Link>
     </article>
   );

@@ -9,7 +9,7 @@ test('renders primary site navigation', () => {
     </MemoryRouter>,
   );
 
-  expect(screen.getByRole('link', { name: 'Героини' })).toBeInTheDocument();
+  expect(screen.getByRole('link', { name: 'Персонажи' })).toBeInTheDocument();
   expect(screen.getByRole('link', { name: 'Эпизоды' })).toBeInTheDocument();
   expect(screen.getByRole('link', { name: 'Мир' })).toBeInTheDocument();
   expect(screen.getByRole('link', { name: 'О проекте' })).toBeInTheDocument();

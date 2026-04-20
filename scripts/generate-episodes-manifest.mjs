@@ -57,6 +57,44 @@ function firstParagraph(markdown) {
   );
 }
 
+function truncateAtWord(text, limit) {
+  if (text.length <= limit) {
+    return text;
+  }
+
+  const sliced = text.slice(0, limit);
+  const boundary = sliced.lastIndexOf(' ');
+
+  return `${(boundary > 0 ? sliced.slice(0, boundary) : sliced).trim()}…`;
+}
+
+function buildCardExcerpt(text) {
+  const normalized = text.replace(/\s+/g, ' ').trim();
+
+  if (!normalized) {
+    return '';
+  }
+
+  const sentences = normalized.match(/[^.!?…]+[.!?…]?/g)?.map((sentence) => sentence.trim()) ?? [
+    normalized,
+  ];
+
+  let cardExcerpt = '';
+
+  for (const sentence of sentences) {
+    const candidate = cardExcerpt ? `${cardExcerpt} ${sentence}`.trim() : sentence;
+
+    if (!cardExcerpt || candidate.length <= 180) {
+      cardExcerpt = candidate;
+      continue;
+    }
+
+    break;
+  }
+
+  return truncateAtWord(cardExcerpt, 180);
+}
+
 function optimizedPngPath(slug) {
   return `media/optimized/season-01/${slug}/illustration.png`;
 }
@@ -109,6 +147,7 @@ const episodes = readdirSync(episodesRoot)
       timePoint: extractMetadataValue(markdown, 'Временная точка'),
       keyScene: extractMetadataValue(markdown, 'Ключевая сцена'),
       excerpt: firstParagraph(bodyMarkdown),
+      cardExcerpt: buildCardExcerpt(firstParagraph(bodyMarkdown)),
       illustration: hasIllustration
         ? {
             src: optimizedPngPath(slug),
